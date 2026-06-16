@@ -66,7 +66,7 @@ Use the ghosts in **any** project — no need to open this repo.
 Then anywhere:
 
 ```
-/ghost-me <ghost-name>
+/ghosttown:ghost-me <ghost-name>
 ```
 
 Manage it later:
