@@ -80,8 +80,6 @@ Add the ghost to the **Available ghosts** table in `README.md`:
 - Density: use the ratio from step 5; append `(thin corpus)` if fewer than 5 source files
 - If eval was skipped, write `—` in the Density column
 
-Also add 3–4 sample prompts under the table for this ghost — pick questions that hit their strongest heuristic clusters, not generic ones.
-
 ### 7. Report
 
 Tell the user:
