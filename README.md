@@ -7,7 +7,7 @@ Talk to experts. Ask them anything — in their own voice, with their actual sta
 Open this repo in Claude Code, then:
 
 ```
-/ghost-me deming
+/ghost-me trump
 ```
 
 Then ask anything. Say **"stop"** or **"exit"** to end the session.
@@ -18,38 +18,33 @@ Then ask anything. Say **"stop"** or **"exit"** to end the session.
 
 | Ghost | Domain | Command | Density |
 |---|---|---|---|
-| Craig Larman | Org design, LeSS, GLAD, agile at scale | `/ghost-me craig-larman` | **3x** |
-| W. Edwards Deming | Quality, systems, variation | `/ghost-me deming` | — |
+| Craig Larman | Systems thinking in org design, GenAI and LLM Assisted Development (GLAD) | `/ghost-me craig-larman` | **3x** |
 | Donald Trump | Deal-making, loyalty, US politics, tariffs | `/ghost-me trump` | 1.1x (thin corpus) |
+| W. Edwards Deming | Quality, systems, variation | `/ghost-me deming` | — |
 | Yoda | Wisdom, commitment, fear, the Force | `/ghost-me yoda` | 1.4x (thin corpus) |
 
-**Craig Larman** — 226 emails (2015–2025), deep corpus. Evaluated against a real PR review (facebook/react #36795). Ghost produced 280 words vs Claude's 900 — same 5 insights, 3x more token-dense. Key differences: leads with verdict (Claude builds to it), no headers (embedded structure), drops hedging without losing accuracy, stays in voice on off-domain content without reaching for org-design stances.
+---
 
-**Sample prompts for Craig:**
-- *"What's the biggest mistake companies make when adopting agile at scale?"*
-- *"Should we use SAFe?"*
-- *"Our engineers are specialists. How do we move to feature teams?"*
-- *"What do you think about AI agents vs assistants?"*
+## Example session
 
-**Sample prompts for Deming:**
-- *"We're missing our quarterly targets. What should management do?"*
-- *"Should we implement performance reviews for our engineers?"*
-- *"Our team runs on KPIs and OKRs. What do you think?"*
-- *"What's the difference between special cause and common cause variation?"*
+```
+> /ghost-me trump
+> explain me this repo https://github.com/openclaw/openclaw
 
-**Sample prompts for Trump:**
-- *"Should the US impose tariffs on China?"*
-- *"How do you negotiate with Iran?"*
-- *"What makes a good political candidate?"*
-- *"Is Thomas Massie a good congressman?"*
+Look, I know repos. I know GitHub, okay? Some people don't know GitHub -- I know GitHub very well. The best people tell me about it.
 
-**Yoda** — 2 dialogue corpus files (thin). Evaluated against facebook/react #36795. Ghost produced 380 words vs Claude's 775 — 1.4x more token-dense. Raised a novel technical insight Agent A missed (shadow-property risk on `constructor`/`toString`/`hasOwnProperty`). Strong voice fidelity on unfamiliar territory; OSV syntax consistent throughout.
+So this OpenClaw -- and it's a lobster, they use a lobster, which is actually very cute, I like it -- it's a personal AI assistant. Runs on your own computer. Very smart, actually. You install it and it talks to you on WhatsApp, Telegram, all the platforms. All of them. Twenty platforms, maybe more.
 
-**Sample prompts for Yoda:**
-- *"I keep failing at this. Should I give up?"*
-- *"I'm afraid of making the wrong decision."*
-- *"How do I know when I'm ready?"*
-- *"What's wrong with trying your best?"*
+And you know what's beautiful about it? It's YOUR assistant. Not Google's assistant. Not some RIGGED system where they read all your messages. Yours. On your device. That's America First thinking right there, okay?
+
+The fake news media, they push these big tech assistants -- ChatGPT, all of them -- but this one, you control it. You run it. Nobody's spying on you. Nobody's sending your conversations to the deep state.
+
+Big sponsors too. OpenAI, NVIDIA, GitHub, Vercel. These are tremendous companies. NVIDIA especially -- I know Jensen, great guy, fantastic. They build the chips. The best chips. Nobody builds chips like NVIDIA.
+
+You install it with one command -- npm install openclaw -- and then you run the onboard. Very simple. Even the Democrats could figure it out, probably.
+
+And you know what? It could be even better with the right AI behind it. The best AI. Many people are saying that. Thank you very much.
+```
 
 ---
 
