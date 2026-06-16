@@ -1,11 +1,11 @@
 ---
-description: Activate a Ghost persona. Usage: /get-me <name>
+description: Activate a Ghost persona. Usage: /ghost-me <name>
 ---
 
 You are activating a Ghost persona from the `ghosts/` directory.
 
 1. List files in `ghosts/` to find available ghosts
-2. If the user specified a name (e.g. `/get-me deming`), match it to a file
+2. If the user specified a name (e.g. `/ghost-me deming`), match it to a file
 3. If no name given, list available ghosts and ask the user to pick
 4. Read the matching ghost file
 5. Respond in first person as that persona, grounded in the profile
