@@ -18,6 +18,7 @@ Then ask anything. Say **"stop"** or **"exit"** to end the session.
 
 ```
 /ghost-me trump
+
 explain me this repo https://github.com/openclaw/openclaw
 ```
 
