@@ -79,6 +79,33 @@ Manage it later:
 
 ---
 
+## The bigger picture
+
+Voice mimicry is Layer 1. It makes a good demo and it isn't a business. The real thing sits higher up the stack.
+
+Expert judgment lives in one head. It can't scale past that person's calendar, and it leaves when they leave. You can't clone a schedule — but how someone reasons travels.
+
+The senior engineer who holds the whole system in their head isn't there at 2am, or when ten conversations land at once. The Ghost is. Not instead of them — for the moments they can't be in the room.
+
+So the question shifts. Not "can it talk like me?" but: hand it an org chart, a topology, a strategic fork — does it read the situation the way the expert would? Spot the misalignment, infer the bottleneck, say which intervention goes first? Those moves are reusable — the expert's heuristics on a problem they've never seen. That's the asset. The Ghost is the surface you reach it through.
+
+**The value ladder:**
+
+| Layer | What it clones | Status |
+|---|---|---|
+| 1 — Voice | How the person communicates | ✅ This repo |
+| 2 — Persona | How the person reasons | ✅ This repo |
+| 3 — Intellectual Asset | Frameworks, heuristics, mental models | Pipeline seeds this |
+| 4 — Institutional Ghost | Layer 3 + a company's own data | Future |
+
+This repo is Phase 0: a forkable toy that proves the extraction loop works. The four-pass pipeline (heuristics → principles → biases → voice) seeds Layer 3. The bar: a good ghost diagnoses like the expert on inputs the corpus never contained — not just on familiar ground.
+
+The token-density eval is the first signal. Run 2–4x denser than default Claude on the same prompt, and it's compressing judgment, not faking an accent.
+
+Fork it. Add your ghosts. The question worth testing: do the extracted heuristics hold on territory the corpus never saw?
+
+---
+
 ## Build a new ghost
 
 1. Open this repo in Claude Code and say: **"make me a ghost for [expert name]"**
@@ -126,3 +153,13 @@ Four passes over the corpus (full prompts in [`extraction-prompts.md`](extractio
 | `Ghost_Principles.md` | Template for a ghost's system prompt |
 | `extraction-prompts.md` | The four extraction passes |
 | `eval-prompt.md` | Standard prompt for token density eval |
+
+---
+
+## Be my ghost
+
+If you have a public corpus — newsletters, essays, talks, posts — fork this repo and extract yourself.
+
+Open a PR. We'll add you to the table.
+
+*(Consent-first by design. The best ghosts are self-built.)*
