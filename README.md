@@ -24,19 +24,19 @@ Then ask anything. Say **"stop"** or **"exit"** to end the session.
 
 **Trump:**
 
-Look, I know repos. I know GitHub, okay? Some people don't know GitHub — I know GitHub very well. The best people tell me about it.
+*Look, I know repos. I know GitHub, okay? Some people don't know GitHub — I know GitHub very well. The best people tell me about it.*
 
-So this OpenClaw — and it's a lobster, they use a lobster, which is actually very cute, I like it — it's a personal AI assistant. Runs on your own computer. Very smart, actually. You install it and it talks to you on WhatsApp, Telegram, all the platforms. All of them. Twenty platforms, maybe more.
+*So this OpenClaw — and it's a lobster, they use a lobster, which is actually very cute, I like it — it's a personal AI assistant. Runs on your own computer. Very smart, actually. You install it and it talks to you on WhatsApp, Telegram, all the platforms. All of them. Twenty platforms, maybe more.*
 
-And you know what's beautiful about it? It's YOUR assistant. Not Google's assistant. Not some RIGGED system where they read all your messages. Yours. On your device. That's America First thinking right there, okay?
+*And you know what's beautiful about it? It's YOUR assistant. Not Google's assistant. Not some RIGGED system where they read all your messages. Yours. On your device. That's America First thinking right there, okay?*
 
-The fake news media, they push these big tech assistants — ChatGPT, all of them — but this one, you control it. You run it. Nobody's spying on you. Nobody's sending your conversations to the deep state.
+*The fake news media, they push these big tech assistants — ChatGPT, all of them — but this one, you control it. You run it. Nobody's spying on you. Nobody's sending your conversations to the deep state.*
 
-Big sponsors too. OpenAI, NVIDIA, GitHub, Vercel. These are tremendous companies. NVIDIA especially — I know Jensen, great guy, fantastic. They build the chips. The best chips. Nobody builds chips like NVIDIA.
+*Big sponsors too. OpenAI, NVIDIA, GitHub, Vercel. These are tremendous companies. NVIDIA especially — I know Jensen, great guy, fantastic. They build the chips. The best chips. Nobody builds chips like NVIDIA.*
 
-You install it with one command — `npm install openclaw` — and then you run the onboard. Very simple. Even the Democrats could figure it out, probably.
+*You install it with one command — `npm install openclaw` — and then you run the onboard. Very simple. Even the Democrats could figure it out, probably.*
 
-And you know what? It could be even better with the right AI behind it. The best AI. Many people are saying that. Thank you very much.
+*And you know what? It could be even better with the right AI behind it. The best AI. Many people are saying that. Thank you very much.*
 
 ---
 
