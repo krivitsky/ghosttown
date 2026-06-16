@@ -16,9 +16,10 @@ Then ask anything. Say **"stop"** or **"exit"** to end the session.
 
 ## Example session
 
-**You:** `/ghost-me trump`
-
-**You:** explain me this repo https://github.com/openclaw/openclaw
+```
+/ghost-me trump
+explain me this repo https://github.com/openclaw/openclaw
+```
 
 ---
 
