@@ -7,7 +7,7 @@ Talk to experts. Ask them anything — in their own voice, with their actual sta
 Open this repo in Claude Code, then:
 
 ```
-/ghost-me trump
+/ghost-me <ghost-name>
 ```
 
 Then ask anything. Say **"stop"** or **"exit"** to end the session.
