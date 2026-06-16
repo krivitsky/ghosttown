@@ -81,28 +81,30 @@ Manage it later:
 
 ## The bigger picture
 
-Voice mimicry is Layer 1. It makes a good demo and it isn't a business. The real thing sits higher up the stack.
+Copying how someone talks is the easy part. It makes a nice demo. It doesn't make a business. The real value is bigger than that.
 
-Expert judgment lives in one head. It can't scale past that person's calendar, and it leaves when they leave. You can't clone a schedule — but how someone reasons travels.
+An expert's judgment lives in one person's head. It can't go beyond what their calendar allows, and it's gone the day they quit. You can't copy their time. But you can copy the way they think — and that part can be shared.
 
-The senior engineer who holds the whole system in their head isn't there at 2am, or when ten conversations land at once. The Ghost is. Not instead of them — for the moments they can't be in the room.
+Picture the one engineer who understands the whole system. At 2am, or when ten people need them at once, they're not around. The Ghost is. It doesn't replace them. It covers the moments they can't be there.
 
-So the question shifts. Not "can it talk like me?" but: hand it an org chart, a topology, a strategic fork — does it read the situation the way the expert would? Spot the misalignment, infer the bottleneck, say which intervention goes first? Those moves are reusable — the expert's heuristics on a problem they've never seen. That's the asset. The Ghost is the surface you reach it through.
+So the real question changes. Not "can it sound like me?" but "can it think like me?" Show it an org chart or a tough decision. Does it see the problem the way the expert would? Does it spot what's broken, find where things get stuck, and say what to fix first?
 
-**The value ladder:**
+Those thinking patterns are the real prize. We call them the Intellectual Asset — IA for short. An IA isn't a fact about the company; it's a rule the expert carries from one job to the next. "We have 500 employees" is just a fact. "Once you pass about 300 people, decisions slow down unless you do X, Y, Z" is an IA — a rule that works on any company, not just this one. The expert's methods, rules of thumb, and mental models are the asset. The Ghost is just how you reach it.
 
-| Layer | What it clones | Status |
+The value ladder:
+
+| Layer | What it copies | Status |
 |---|---|---|
-| 1 — Voice | How the person communicates | ✅ This repo |
-| 2 — Persona | How the person reasons | ✅ This repo |
-| 3 — Intellectual Asset | Frameworks, heuristics, mental models | Pipeline seeds this |
-| 4 — Institutional Ghost | Layer 3 + a company's own data | Future |
+| 1 — Voice | How the person talks | ✅ This repo |
+| 2 — Persona | How the person thinks | ✅ This repo |
+| 3 — Intellectual Asset (IA) | Their methods, rules of thumb, mental models | Pipeline starts this |
+| 4 — Institutional Ghost | The IA plus a company's own data | Future |
 
-This repo is Phase 0: a forkable toy that proves the extraction loop works. The four-pass pipeline (heuristics → principles → biases → voice) seeds Layer 3. The bar: a good ghost diagnoses like the expert on inputs the corpus never contained — not just on familiar ground.
+This repo is the first step. It's a small, copyable example that shows the idea works. The four-step process (rules of thumb → principles → biases → voice) is how we pull an expert's IA out of their writing. The test: a good Ghost should use that IA on problems it was never trained on — not just the ones it has already seen.
 
-The token-density eval is the first signal. Run 2–4x denser than default Claude on the same prompt, and it's compressing judgment, not faking an accent.
+The first sign it's working is how much it packs into an answer. If it says 2–4x more per word than plain Claude on the same question, it's really using the expert's judgment, not just copying the style.
 
-Fork it. Add your ghosts. The question worth testing: do the extracted heuristics hold on territory the corpus never saw?
+Copy it. Add your own Ghosts. The question worth testing: does the expert's IA still hold up on problems it was never built for?
 
 ---
 
