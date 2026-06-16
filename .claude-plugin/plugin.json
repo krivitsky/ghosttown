@@ -2,7 +2,34 @@
   "name": "ghosttown",
   "description": "Activate expert ghost personas grounded in real corpora — talk to experts in their own voice",
   "version": "0.3.0",
-  "keywords": ["persona", "ghost", "agile", "LeSS", "GLAD", "deming", "product-management", "cutler"],
+  "keywords": ["persona", "ghost", "voice", "corpus", "expert"],
   "author": { "name": "Alexey Krivitsky" },
-  "homepage": "https://github.com/krivitsky/ghosttown"
+  "homepage": "https://github.com/krivitsky/ghosttown",
+  "commands": "./.claude/commands/",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/.claude/hooks/ghost-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading ghost persona..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/.claude/hooks/ghost-mode-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking ghost..."
+          }
+        ]
+      }
+    ]
+  }
 }
