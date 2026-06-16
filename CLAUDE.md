@@ -39,7 +39,7 @@ Name format: `firstname-lastname.md` (e.g. `w-edwards-deming.md`).
 
 ### 5. Run token density eval
 
-Run two subagents in parallel on the same off-domain prompt (something the expert would review but not lecture about — e.g. a code PR, a business memo, a news article):
+Run two subagents in parallel using the standard prompt in `eval-prompt.md`:
 
 - **Agent A:** Default Claude, no persona. Answer the prompt naturally.
 - **Agent B:** Ghost. Answer using the ghost file as system prompt.
