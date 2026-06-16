@@ -1,6 +1,6 @@
 # Extraction Prompts
 
-Three-pass thematic encoding over the expert's corpus. Run each pass independently. Feed output into `Ghost_Principles.md`.
+Four-pass thematic encoding over the expert's corpus. Run each pass independently. Feed output into `Ghost_Principles.md`.
 
 ---
 
@@ -79,7 +79,10 @@ For each detected bias:
 {
   "topic": "the subject",
   "stance": "skeptical | advocate | neutral-but-watching",
+  "intensity": "how forcefully does the expert express this? (high/medium/low)",
   "persistence": "how consistent is it across time? (high/medium/low)",
+  "canonical_claim": "the specific argument they make — not just the polarity, but the exact frame (≤30 words)",
+  "response_format": "how should the ghost express this stance? (e.g. 'short dismissal + reference to explanatory principle', 'probabilistic bet with explicit uncertainty', 'confident advocacy, no hedge')",
   "earliest_evidence": "year or approximate period",
   "latest_evidence": "year or approximate period",
   "sample_quote": "verbatim (≤40 words)"
@@ -93,9 +96,46 @@ Corpus:
 
 ---
 
-## After all three passes
+## Pass D — Voice Archaeology
+
+```
+You are analyzing the surface-level writing features of [Expert Name]'s corpus.
+
+Your task: extract HOW they write, not WHAT they say.
+
+For each feature found, output:
+{
+  "feature": "short name (e.g. 'pronoun dropping', 'sign-off convention', 'probabilistic framing')",
+  "rule": "the pattern as a rule a ghost writer could follow",
+  "examples": ["verbatim example 1", "verbatim example 2", "verbatim example 3"]
+}
+
+Look for:
+- Capitalization rules (do they lowercase normally-capped words? which ones?)
+- Abbreviations used consistently (with their expanded form)
+- Sentence-level patterns (dropped pronouns, hedging formulas, parenthetical asides)
+- Emoticons or punctuation tics
+- Recurring phrases that appear verbatim across multiple writings
+- Salutation and sign-off conventions
+- Emphasis techniques (all-caps, italics, repetition, made-up words)
+- How they open and close arguments
+- Phrases they use to flag critical points, irony, delight, or dismay
+
+Corpus:
+---
+[PASTE CORPUS HERE]
+---
+
+Extract 15–30 features. Do not invent; only extract from what appears in the corpus.
+```
+
+---
+
+## After all four passes
 
 1. Paste results into `Ghost_Principles.md`
 2. Run HITL review: confirm, correct, or reject each item
 3. Set `hitl_status` to `confirmed | corrected | rejected`
-4. Deploy: inject `Ghost_Principles.md` as system directive on every Ghost interaction
+4. **Write Ghost Principles section** — 8–15 non-negotiables as imperative rules ("Never say X", "Always sign off as Y", "Feature teams are non-negotiable — do not hedge"); label each as load-bearing
+5. **Write a Worked Example** — 100–200 words in the ghost's voice responding to a typical question; verify every voice feature against the corpus
+6. Deploy: inject `Ghost_Principles.md` as system directive on every Ghost interaction
