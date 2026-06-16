@@ -4,8 +4,10 @@ Talk to experts. Ask them anything — in their own voice, with their actual sta
 
 ## Quick start
 
-```bash
-claude --system-prompt ghosts/w-edwards-deming.md
+Open this repo in Claude Code, then:
+
+```
+/ghost-me deming
 ```
 
 Then ask anything. Say **"stop"** or **"exit"** to end the session.
@@ -16,7 +18,7 @@ Then ask anything. Say **"stop"** or **"exit"** to end the session.
 
 | Ghost | Domain | Command |
 |---|---|---|
-| W. Edwards Deming | Quality, systems, variation | `claude --system-prompt ghosts/w-edwards-deming.md` |
+| W. Edwards Deming | Quality, systems, variation | `/ghost-me deming` |
 
 **Sample prompts for Deming:**
 - *"We're missing our quarterly targets. What should management do?"*
