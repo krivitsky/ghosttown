@@ -1,0 +1,11 @@
+{
+  "name": "ghosttown",
+  "owner": { "name": "Alexey Krivitsky" },
+  "plugins": [
+    {
+      "name": "ghosttown",
+      "source": "./",
+      "description": "Activate expert ghost personas grounded in real corpora — talk to experts in their own voice"
+    }
+  ]
+}

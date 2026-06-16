@@ -54,6 +54,30 @@ explain me this repo https://github.com/openclaw/openclaw
 
 ---
 
+## Install as a plugin
+
+Use the ghosts in **any** project — no need to open this repo.
+
+```
+/plugin marketplace add krivitsky/ghosttown
+/plugin install ghosttown@ghosttown
+```
+
+Then anywhere:
+
+```
+/ghost-me <ghost-name>
+```
+
+Manage it later:
+
+```
+/plugin marketplace update ghosttown     # pull new ghosts
+/plugin uninstall ghosttown@ghosttown     # remove
+```
+
+---
+
 ## Build a new ghost
 
 1. Open this repo in Claude Code and say: **"make me a ghost for [expert name]"**
