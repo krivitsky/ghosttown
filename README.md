@@ -59,9 +59,19 @@ explain me this repo https://github.com/openclaw/openclaw
 1. Open this repo in Claude Code and say: **"make me a ghost for [expert name]"**
 2. Claude creates `corpus/[slug]/` for you and asks for source material
 3. Drop their writing into that folder (emails, essays, talks, transcripts) — aim for ~5 substantial documents
-4. Tell Claude you're ready; it runs the extraction pipeline and writes the ghost to `ghosts/`
+4. Tell Claude you're ready; it runs the extraction pipeline and builds the ghost
 
-Claude reads `corpus/[slug]/` only. Thin corpus (< 5 files) still works, but ghost quality drops — Claude will warn you.
+**What Claude does then:**
+
+Claude reads `corpus/[slug]/` only — never other ghosts' material. It runs four extraction passes (heuristics, principles, biases, voice) over your source files, then distils the results into a single system prompt grounded in the expert's actual words. It never invents content not in the corpus. Finally it runs a token-density eval to benchmark the ghost against default Claude. Thin corpus (< 5 files) still works, but ghost quality drops — Claude will warn you.
+
+**What you get:**
+
+| File | Contents |
+|---|---|
+| `ghosts/[slug].md` | The ghost — system prompt with voice rules, stances, heuristics, and a verification log |
+| `ghosts/[slug]-sample.md` | The ghost's eval response (token-density benchmark) |
+| README row | Added to the table above, with the density ratio linked to the sample |
 
 ---
 
