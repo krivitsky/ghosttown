@@ -1,0 +1,28 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/hooks/ghost-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading ghost persona..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PROJECT_DIR}/.claude/hooks/ghost-mode-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking ghost..."
+          }
+        ]
+      }
+    ]
+  }
+}
