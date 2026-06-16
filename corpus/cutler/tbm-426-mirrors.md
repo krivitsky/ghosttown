@@ -1,0 +1,44 @@
+---
+source: email
+subject: TBM 426: The Trouble With Mirrors
+date: 2026-06-16
+author: John Cutler
+newsletter: The Beautiful Mess
+---
+
+There's a difference between mirrors and mirroring. Over the years I've come to see that difference, and I wanted to share how my thinking has shifted.
+Earlier in my career, I was smitten by the idea that if teams could "just" visualize how they work, embrace transparency, etc., then almost any team could improve. This is similar to the "if we could just talk it out" belief, or the "if we could just hear each other out" (or consider other perspectives, etc. etc.) belief. I still carry some of this with me to this day despite numerous run-ins with "reality" and, as some people are keen to point out, "the real world."
+I've yet to observe evidence of a single "real world," or that things are destined to be the way "real world" folks make them out to be (all the time, at least), but I have come to see the idea of mirrors differently as my career has progressed.
+Mirrors are not neutral
+Organizational truth can be weaponized
+We prefer flattering mirrors
+The person holding the mirror has an agenda too
+Seeing something clearly doesn't mean you can act on it
+Every mirror has a frame, and the frame is a choice
+"Radical honesty" is its own kind of performance
+Solo mirrors and collective mirrors work differently
+Truth in organizations is negotiated
+What people want isn't the mirror — it's to be mirrored
+People don't want the "truth" reflected back in some abstract way. They want their experience to be recognized. They want their perspective to matter. Shifting my thinking from mirrors to mirroring has been a big mental leap. It is the shift from showing people the truth to helping people feel seen. And in the current landscape, feeling "seen" might actually look like the reverse of transparency. It is someone feeling like their perspective is understood, but is not being held against them.
+The trouble with mirrors is that they don't show "reality"; they show a reality, from a position, through a frame. And even when people see something clearly, that does not mean they are ready, safe, aligned, or empowered to change it.
+I was thinking about this while I was looking in the mirror this morning. The morning of my birthday. And I thought to myself, "You know, that gray hair isn't exactly the thing I wanted to see this morning." But hey, it is a mirror, right? I *should* want to see things. Not really. I should want to see that messy closet so that I can "get real" with the mess. But I don't open it. We do many things to avoid seeing things as they are, or at least how we might perceive them in that particular moment.
+We do this all the time in our personal lives, so it should come as no surprise that we might not want to see a company org chart as it "is," with the vestiges of strategies past littering the reporting structures, team structures, and collaboration patterns. It might be far more comforting to see the bright, shiny, and new team names, even if they obscure the situation on the ground.
+If a team tries to explain "how it is" a couple times, and no one really pays attention (or punishes them for that), they would prefer to keep things under wraps. And for all the talk about "clear-eyed" strategies, it isn't exactly inspiring to walk into a meeting and find out that the chances of the company succeeding are basically a coin flip, that there are a dozen competitors who customers could wake up in the morning and sign a deal with, or that there's not anything terribly differentiated about what you do. That's uncomfortable. There was a lot to be said from a raw, unabashed capitalistic standpoint that the company would do just fine in pure extractive mode. It was actually better for everyone involved to add some frosting and sparkle to the mirror, at least until the job market improved.
+All this is to say that while the concept of shining a mirror on operations sounds good in theory, it misses a couple key points:
+There is no single mirror, or at least people will perceive what they see differently. There are many mirrors.
+Looking at mirrors requires high levels of psychological safety AND shared goals. You can have an incredibly "safe" environment where people just don't see the shared incentive to stare down the big elephants in the room.
+Companies are more like the funny room with all the contorted mirrors. We like to shift our bodies around slightly and look VERY BIG, and then sometimes VERY SMALL. Sometimes we like to see 1,000 fractal images of ourselves, and sometimes we want to stare into the abyss.
+What people really want is for their view of things not to be discounted and invalidated. They want their truth understood and their perspective heard. They want some sense of control. They want to be heard and understood. They want someone they trust to "mirror" them and connect.
+The solo mirror works because it's a one-party system. You, your body, the coach, the scale. There's a single locus of control and a single viewer. Truth is uncomfortable but "simple." You can look or not look, but the thing you're looking at isn't looking back at you with its own agenda. Or if it is, you're negotiating with your many "faces" and sides, which is basically the underpinning of Internal Family Systems therapy — but that is a story for another day.
+Organizations are multi-party. There is no mirror — there are dozens of people holding up fragments, each angled slightly differently, each reflecting something real but partial, and each with something at stake in what gets seen. That's not a pathology. That's just what it means to be a collective. The "truth" isn't being hidden or distorted; it's being negotiated, constantly, because it has to be. There's no view from nowhere (see Thomas Nagel's *The View from Nowhere*, where he explores the tension between the objective standpoint we aspire to and the subjective standpoint we're stuck with).
+Maybe we're doing what collectives do: negotiating what to foreground, what to background, what to act on, and what to leave alone (based on power, incentive, timing, capacity, and a hundred other things that have nothing to do with courage or cowardice).
+I often find myself coming back to Venkatesh Rao's Gervais Principle and how it tackles this. In his framing, the people who want to hold up mirrors to the organization are the Clueless, the middle layer that genuinely believes the organization is what it says it is. The Sociopaths at the top already know what's behind the mirror; they built it. And the Losers at the bottom stopped looking a long time ago.
+The belief in "organizational truth" tends to come from a very specific position in the hierarchy: consultants, coaches, agile practitioners, team leads. People close enough to the mess to see it, who care enough to want to name it, but who don't have the power or the cynicism to just play the game.
+The belief in mirrors is itself positional. It's not universal wisdom. It's the worldview of a particular organizational stratum. The people at the top don't need the mirror; they're arranging the lighting. The people at the bottom have already internalized that looking doesn't change anything. It's the middle that builds its identity around "if we could just see clearly..."
+Some of the loudest voices for "transparency" or "radical" honesty, or trying to do away with politics, are actually about power. They get to decide what counts as honest, what counts as political, and who is being "difficult" for not going along with their version of clarity.
+And some of the biggest advocates for "crucial conversations" are either people who have never had to suffer the direct consequences for speaking up, or people who've already won enough that candor is cheap for them.
+I realize all of this sounds negative. Why am I saying it? I'm saying it to underscore that you have to be careful about what you ask for. Before you hold up a mirror, or ask someone else to look into one, it's worth questioning whether the "truth" will be met with stewardship. Will what gets surfaced be held with care, or will it just be out there, exposed, with no one accountable for what happens next?
+So where does that leave me? Something more aligned with Peter Block.
+In *Community: The Structure of Belonging*, he writes: "Individual transformation is not the point; weaving and strengthening the fabric of community is a collective effort and starts from a shift in our mindset about our connectedness." His question isn't "what does the data say?" It's "how are we going to be when we gather together?"
+Mirroring is engaging in some version of reality (or realities) together. Exploring it, mapping it, not because the map is inherently right, but because we're exploring together, and both people feel heard and part of it.
+The map matters less than the fact that we drew it side by side.

@@ -1,0 +1,38 @@
+---
+source: email
+subject: TBM 425: AI and Agency
+date: 2026-06-07
+author: John Cutler
+newsletter: The Beautiful Mess
+---
+
+So you want your team to figure out how to use AI for the benefit of your company? Then stop stripping them of the agency to do it.
+AI is posing all of us hard questions about agency, worth, and identity. But the far bigger problem is how we're talking about it, mandating it, and wielding it.
+You see leaders blabbering on about everything they're doing to drive adoption, while trampling the most basic elements of human nature: agency, trust, and dignity. Many leadership teams are engaging in what amounts to collective gaslighting of their teams. They treat resistance to AI as a personal failing, a lack of curiosity, motivation, or willingness to adapt, rather than a rational response to a changing environment.
+They frame adoption as an education problem, a motivation problem, a mindset problem, or a matter of individual "agency." They spend very little time considering how the environment can be either an affordance to high agency, or a limiter. But as Bandura put it, "Personal agency operates within a broad network of sociostructural influences." People are both producers and products of their environment.
+The individual's relationship with AI is a long-term, multi-career, deeply personal thing. You'll have many jobs across many companies. Learning how AI fits into your craft, on your terms, is genuinely important. But that's not what leaders are talking about. They're talking about adoption for the company. On the company's timeline. For the company's metrics. The language sounds like "this is for your growth," but the structure (and any halfway sensible reading between the lines) says "this is for our Q3 goals." They're co-opting a personal journey for organizational benefit and calling it empowerment.
+No one is asking the harder question: what have our companies done to erode so much trust and loyalty that people are naturally going to question these mandates? Years of layoffs, reorgs, broken promises, and treating people as interchangeable, and now you're surprised they don't take "this will be great for you" at face value?
+Agency is not only individual.
+Agency exists in an environment. Yet almost everything about how we talk about AI adoption treats it as a personal trait you either have or you don't.
+Paraphrasing a friend's recent rant over coffee:
+I'm not anti-AI. I'm anti how my company is talking about it. I'm anti being treated like an 'agent' who needs to adopt something for someone else's benefit. I use AI every day. I'm genuinely curious about it. But when my manager tells me I need to 'show more AI initiative,' I don't feel inspired. I feel managed. I have twenty years of experience solving hard problems, and now the measure of my worth is whether I'm prompting enough? Give me a real problem, give me space to figure out whether AI helps solve it, and get out of my way. That's all I'm asking.
+When you strip people of the ability to question, to learn at their own pace, to experiment with tools on their own terms, you strip them of agency. You're not asking them to adopt a tool. You're asking them to stop thinking. Healthy skepticism and empiricism is a core tenet of agency. Curiosity and the ability to act on that curiosity is a bedrock of agency. When companies gaslight healthy skepticism, they remove people's agency.
+You shouldn't steal agency from the people asking the right questions. The distinction between tools that help and tools that hurt is critical, and the people trying to make that distinction are doing the most important work right now.
+Ursula Franklin warned that prescriptive technologies "eliminate the occasions for decision-making and judgment" and produce "a culture of conformity and compliance." That's what mandates do. They turn an exploratory tool into a compliance exercise.
+Ivan Illich drew the line between convivial tools, which give people "the greatest opportunity to enrich the environment with the fruits of their vision," and manipulative tools, which "allow their designers to determine the meaning and expectations of others."
+AI can be either. The way most companies are deploying it, it's the latter.
+And when you remove people's agency in the face of a technology that already raises hard questions about human agency, about what we're for, what our work means, what only we can do, what else would you expect? Of course people push back. Of course they disengage. You've taken the one thing they needed most.
+The "bar raiser" idea is deeply encoded in tech lore: find the best, study what makes them different, use them to raise the standard for everyone else. Even the best versions of this, like Atlassian's evolution from vanity adoption metrics to per-function superuser analysis, still frame the problem as "find the right individuals" while ignoring the environment that makes their behavior possible and measuring capability-building rather than actual return. Grow capacity faster than the judgment about where to aim it, and you just get a more capable org producing more output of unproven value.
+The productivity narrative keeps inflating.
+First, you had to hire 10x people. Then AI was going to make everyone 10x. Now we have CEOs claiming they're 100x more effective. I recently asked one of these CEOs, who runs a collaboration tool, whether there was 100x more demand for their product. Crickets. The math only works if you don't ask where the value goes.
+When a company says "everyone is going to use AI," what message does that send to the people who work there? Why should they tinker on your shareholders' behalf? What assurance are you giving that today's ingenuity and experimentation will actually benefit people, both individually and collectively? How do your breathless rallying cries convey anything other than "produce more, faster, with fewer of you"?
+Self-Determination Theory (Deci & Ryan) tells us that people need three things to be genuinely motivated: autonomy, competence, and relatedness. Look at what we're doing to all three.
+Autonomy. "Everyone will use AI." Mandates replace choice. You've removed the very thing that makes adoption feel like agency instead of compliance.
+Competence. AI devalues hard-won skills while demanding new ones on someone else's timeline. Skills like judgment, facilitation, synthesis, and craft are glossed over because they're harder to see in an AI workflow. The message: what you were good at matters less now, and you'd better catch up fast.
+Relatedness. The individual "superpower" narrative rewards going solo. When one person can bypass the team, collaboration isn't enhanced. It's sidelined. People lose their connection to the group's purpose.
+The companies demanding AI adoption are systematically destroying the conditions that would make genuine adoption possible. Then they label the predictable result a mindset problem.
+This is the exact moment that calls for collective continuous improvement. Learning together, experimenting safely, sharing what works, iterating on how the team operates. Instead, we're navigating highly pathological environments, where trust is low, mandates are high, and the people best positioned to figure this out together have been stripped of the agency to do so.
+So ask yourself:
+Am I creating an environment where people can develop agency with AI, or am I mandating compliance and calling it adoption?
+When someone on my team pushes back on AI, do I treat that as a signal to listen to or a problem to fix?
+Can I articulate who specifically benefits from our AI push, and over what time horizon, and have I said that out loud to the people I'm asking to change?

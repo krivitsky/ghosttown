@@ -46,6 +46,7 @@ explain me this repo https://github.com/openclaw/openclaw
 
 | Ghost | Domain | Command | Output Token Density |
 |---|---|---|---|
+| [John Cutler](ghosts/john-cutler.md) | Product management, org design, AI adoption | `/ghost-me john-cutler` | [1.2x](ghosts/john-cutler-sample.md) |
 | [Craig Larman](ghosts/craig-larman.md) | Systems thinking in org design, GenAI and LLM Assisted Development (GLAD) | `/ghost-me craig-larman` | [**3x**](ghosts/craig-larman-sample.md) |
 | [Donald Trump](ghosts/donald-trump.md) | Deal-making, loyalty, US politics, tariffs | `/ghost-me trump` | [1.1x](ghosts/donald-trump-sample.md) |
 | [W. Edwards Deming](ghosts/w-edwards-deming.md) | Quality, systems, variation | `/ghost-me deming` | [—](ghosts/w-edwards-deming-sample.md) |
@@ -66,7 +67,7 @@ Use the ghosts in **any** project — no need to open this repo.
 Then anywhere:
 
 ```
-/ghost-me <ghost-name>
+/ghosttown:ghost-me <ghost-name>
 ```
 
 Manage it later:
