@@ -132,10 +132,11 @@ function readGhostFlag(flagPath) {
 }
 
 // Resolve the plugin/repo root. CLAUDE_PLUGIN_ROOT is set when running as an
-// installed plugin; otherwise fall back to the repo root (hooks/ sits one level
-// inside it), which is correct when ghosttown is used as an opened repo.
+// installed plugin; otherwise fall back to the repo root. These scripts live at
+// <root>/.claude/hooks/, so the fallback walks up two levels — correct when
+// ghosttown is used as an opened repo.
 function resolveRoot() {
-  return process.env.CLAUDE_PLUGIN_ROOT || path.join(__dirname, '..');
+  return process.env.CLAUDE_PLUGIN_ROOT || path.join(__dirname, '..', '..');
 }
 
 module.exports = { safeWriteGhostFlag, readGhostFlag, resolveRoot, SLUG_RE, MAX_FLAG_BYTES };

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// ghosttown — persistence-layer tests. No deps. Run: node hooks/test.js
+// ghosttown — persistence-layer tests. No deps. Run: node .claude/hooks/test.js
 //
 // Drives the real hook scripts (ghost-mode-tracker.js, ghost-activate.js) the
 // same way Claude Code does: stdin JSON for UserPromptSubmit, env for config.
@@ -11,11 +11,12 @@ const fs = require('fs');
 const os = require('os');
 const path = require('path');
 
-const HOOKS = __dirname;
-const ROOT = path.join(__dirname, '..');
+const HOOKS = __dirname;                          // <root>/.claude/hooks
+const ROOT = path.join(__dirname, '..', '..');    // repo/plugin root
 const TRACKER = path.join(HOOKS, 'ghost-mode-tracker.js');
 const ACTIVATE = path.join(HOOKS, 'ghost-activate.js');
 const SET = path.join(HOOKS, 'ghost-set.js');
+const SHOW = path.join(HOOKS, 'ghost-show.js');
 
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'ghosttown-test-'));
 const FLAG = path.join(tmp, '.ghost-active');
@@ -29,6 +30,9 @@ function sessionStart() {
 }
 function ghostSet(slug) {
   return execFileSync('node', [SET, slug], { env, encoding: 'utf8' });
+}
+function ghostShow(args) {
+  return execFileSync('node', [SHOW, ...args], { env, encoding: 'utf8' });
 }
 function flag() {
   try { return fs.readFileSync(FLAG, 'utf8').trim(); } catch (e) { return null; }
@@ -127,6 +131,16 @@ check('ghost-set no-ops on empty', flag() === null);
 reset();
 ghostSet('John-Cutler');
 check('ghost-set lowercases slug', flag() === 'john-cutler');
+
+// --- ghost-show.js (command helper) --------------------------------------
+const list = ghostShow([]);
+check('ghost-show lists ghosts', list.includes('craig-larman') && list.includes('john-cutler'));
+check('ghost-show excludes -sample files', !list.split('\n').some(s => s.endsWith('-sample')));
+const shown = ghostShow(['craig-larman']);
+check('ghost-show prints profile', shown.includes('# Craig Larman — Ghost Prompt'));
+let showErr = false;
+try { ghostShow(['nonexistent-person']); } catch (e) { showErr = true; }
+check('ghost-show errors on unknown slug', showErr);
 
 // --- empty / malformed input ---------------------------------------------
 reset();
