@@ -1,0 +1,12 @@
+#!/bin/sh
+# Bootstrap a new ghost project from this template.
+# Run once after copying/cloning ghosttown into your own directory.
+
+set -e
+
+git init
+git add .
+git commit -m "init: bootstrap from ghosttown"
+
+echo ""
+echo "Done. Next: drop corpus into corpus/ and say 'make me a ghost for [name]'."
