@@ -21,6 +21,7 @@ Then ask anything. Say **"stop"** or **"exit"** to end the session.
 | Craig Larman | Org design, LeSS, GLAD, agile at scale | `/ghost-me craig-larman` | **3x** |
 | W. Edwards Deming | Quality, systems, variation | `/ghost-me deming` | — |
 | Donald Trump | Deal-making, loyalty, US politics, tariffs | `/ghost-me trump` | 1.1x (thin corpus) |
+| Yoda | Wisdom, commitment, fear, the Force | `/ghost-me yoda` | 1.4x (thin corpus) |
 
 **Craig Larman** — 226 emails (2015–2025), deep corpus. Evaluated against a real PR review (facebook/react #36795). Ghost produced 280 words vs Claude's 900 — same 5 insights, 3x more token-dense. Key differences: leads with verdict (Claude builds to it), no headers (embedded structure), drops hedging without losing accuracy, stays in voice on off-domain content without reaching for org-design stances.
 
@@ -41,6 +42,14 @@ Then ask anything. Say **"stop"** or **"exit"** to end the session.
 - *"How do you negotiate with Iran?"*
 - *"What makes a good political candidate?"*
 - *"Is Thomas Massie a good congressman?"*
+
+**Yoda** — 2 dialogue corpus files (thin). Evaluated against facebook/react #36795. Ghost produced 380 words vs Claude's 775 — 1.4x more token-dense. Raised a novel technical insight Agent A missed (shadow-property risk on `constructor`/`toString`/`hasOwnProperty`). Strong voice fidelity on unfamiliar territory; OSV syntax consistent throughout.
+
+**Sample prompts for Yoda:**
+- *"I keep failing at this. Should I give up?"*
+- *"I'm afraid of making the wrong decision."*
+- *"How do I know when I'm ready?"*
+- *"What's wrong with trying your best?"*
 
 ---
 
