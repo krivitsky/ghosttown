@@ -44,13 +44,13 @@ explain me this repo https://github.com/openclaw/openclaw
 
 ## Available ghosts
 
-| Ghost | Domain | Command | Density |
+| Ghost | Domain | Command | Output Token Density |
 |---|---|---|---|
-| Craig Larman | Systems thinking in org design, GenAI and LLM Assisted Development (GLAD) | `/ghost-me craig-larman` | [**3x**](ghosts/craig-larman-sample.md) |
-| Donald Trump | Deal-making, loyalty, US politics, tariffs | `/ghost-me trump` | [1.1x (thin corpus)](ghosts/donald-trump-sample.md) |
-| W. Edwards Deming | Quality, systems, variation | `/ghost-me deming` | [—](ghosts/w-edwards-deming-sample.md) |
-| Yoda | Wisdom, commitment, fear, the Force | `/ghost-me yoda` | [1.4x (thin corpus)](ghosts/yoda-sample.md) |
-| Sheldon Cooper | Theoretical physics, social protocols, intellectual superiority | `/ghost-me sheldon-cooper` | [0.8x (fictional)](ghosts/sheldon-cooper-sample.md) |
+| [Craig Larman](ghosts/craig-larman.md) | Systems thinking in org design, GenAI and LLM Assisted Development (GLAD) | `/ghost-me craig-larman` | [**3x**](ghosts/craig-larman-sample.md) |
+| [Donald Trump](ghosts/donald-trump.md) | Deal-making, loyalty, US politics, tariffs | `/ghost-me trump` | [1.1x](ghosts/donald-trump-sample.md) |
+| [W. Edwards Deming](ghosts/w-edwards-deming.md) | Quality, systems, variation | `/ghost-me deming` | [—](ghosts/w-edwards-deming-sample.md) |
+| [Yoda](ghosts/yoda.md) | Wisdom, commitment, fear, the Force | `/ghost-me yoda` | [1.4x](ghosts/yoda-sample.md) |
+| [Sheldon Cooper](ghosts/sheldon-cooper.md) | Theoretical physics, social protocols, intellectual superiority | `/ghost-me sheldon-cooper` | [0.8x](ghosts/sheldon-cooper-sample.md) |
 
 ---
 

@@ -60,25 +60,34 @@ Run two subagents in parallel using the standard prompt in `eval-prompt.md`:
 - **Agent A:** Default Claude, no persona. Answer the prompt naturally.
 - **Agent B:** Ghost. Answer using the ghost file as system prompt.
 
-After both respond, report:
-- Word count for each
-- Distinct insights/claims for each
-- Words-per-insight ratio (density)
-- Voice fidelity check: did the ghost stay in character on unfamiliar territory?
+After both respond:
+- Compute density ratio (ghost ÷ default Claude, by words-per-insight)
+- Check voice fidelity: did the ghost stay in character on unfamiliar territory?
+- Write Agent B's response verbatim to `ghosts/[expert-slug]-sample.md` with this header:
 
-Log the density ratio as the ghost's calibration baseline. A well-built ghost should be 2–4x more token-dense than default Claude on the same content.
+```
+# [Full Name] — Eval Sample
+
+**Prompt:** [one-line description of the eval prompt]
+
+---
+
+[ghost response verbatim]
+```
+
+A well-built ghost should be 2–4x more token-dense than default Claude on the same content.
 
 ### 6. Register in README
 
 Add the ghost to the **Available ghosts** table in `README.md`:
 
 ```
-| [Full Name] | [2–4 word domain summary] | `/ghost-me [slug]` | [density ratio, e.g. "2.3x"] |
+| [Full Name] | [2–4 word domain summary] | `/ghost-me [slug]` | [[density ratio](ghosts/[slug]-sample.md)] |
 ```
 
 - Domain: pick the 2–4 words that best describe their expertise, not their biography
-- Density: use the ratio from step 5; append `(thin corpus)` if fewer than 5 source files
-- If eval was skipped, write `—` in the Density column
+- Density: the ratio only — no parenthetical notes. Link it to the sample file.
+- If eval was skipped, write `—` (no link)
 
 ### 7. Report
 
