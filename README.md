@@ -56,18 +56,18 @@ explain me this repo https://github.com/openclaw/openclaw
 
 ## Build a new ghost
 
-1. Create a folder inside `corpus/` named after the expert (e.g. `corpus/deming/`)
-2. Drop their writing into that folder (emails, essays, talks, transcripts)
-3. Open this repo in Claude Code
-4. Say: **"make me a ghost for [expert name]"**
+1. Open this repo in Claude Code and say: **"make me a ghost for [expert name]"**
+2. Claude creates `corpus/[slug]/` for you and asks for source material
+3. Drop their writing into that folder (emails, essays, talks, transcripts) — aim for ~5 substantial documents
+4. Tell Claude you're ready; it runs the extraction pipeline and writes the ghost to `ghosts/`
 
-Claude runs the extraction pipeline against `corpus/[expert-name]/` only and writes the result to `ghosts/`. Minimum corpus: ~5 substantial documents.
+Claude reads `corpus/[slug]/` only. Thin corpus (< 5 files) still works, but ghost quality drops — Claude will warn you.
 
 ---
 
 ## Extraction pipeline
 
-Four passes over the corpus:
+Four passes over the corpus (full prompts in [`extraction-prompts.md`](extraction-prompts.md)):
 
 | Pass | Extracts |
 |---|---|
