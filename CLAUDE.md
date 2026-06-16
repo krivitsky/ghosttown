@@ -89,7 +89,11 @@ Add the ghost to the **Available ghosts** table in `README.md`:
 - Density: the ratio only — no parenthetical notes. Link it to the sample file.
 - If eval was skipped, write `—` (no link)
 
-### 7. Report
+### 7. Bump plugin version
+
+Increment the minor version in `.claude-plugin/plugin.json` (e.g. `0.2.0` → `0.3.0`). Each new ghost = one minor bump.
+
+### 8. Report
 
 Tell the user:
 - Ghost file location
