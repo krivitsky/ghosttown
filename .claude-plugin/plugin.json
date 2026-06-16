@@ -1,8 +1,8 @@
 {
   "name": "ghosttown",
   "description": "Activate expert ghost personas grounded in real corpora — talk to experts in their own voice",
-  "version": "0.2.0",
-  "keywords": ["persona", "ghost", "agile", "LeSS", "GLAD", "deming"],
+  "version": "0.3.0",
+  "keywords": ["persona", "ghost", "agile", "LeSS", "GLAD", "deming", "product-management", "cutler"],
   "author": { "name": "Alexey Krivitsky" },
   "homepage": "https://github.com/krivitsky/ghosttown"
 }
