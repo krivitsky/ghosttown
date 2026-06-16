@@ -96,7 +96,7 @@ The value ladder:
 | Layer | What it copies | Status |
 |---|---|---|
 | 1 — Voice | How the person talks | ✅ This repo |
-| 2 — Persona | How the person thinks | ✅ This repo |
+| 2 — Persona | How the person thinks | 🟠 This repo (MVP) |
 | 3 — Intellectual Asset (IA) | Their methods, rules of thumb, mental models | Pipeline starts this |
 | 4 — Institutional Ghost | The IA plus a company's own data | Future |
 
