@@ -15,6 +15,7 @@ const HOOKS = __dirname;
 const ROOT = path.join(__dirname, '..');
 const TRACKER = path.join(HOOKS, 'ghost-mode-tracker.js');
 const ACTIVATE = path.join(HOOKS, 'ghost-activate.js');
+const SET = path.join(HOOKS, 'ghost-set.js');
 
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(), 'ghosttown-test-'));
 const FLAG = path.join(tmp, '.ghost-active');
@@ -25,6 +26,9 @@ function tracker(prompt) {
 }
 function sessionStart() {
   return execFileSync('node', [ACTIVATE], { env, encoding: 'utf8' });
+}
+function ghostSet(slug) {
+  return execFileSync('node', [SET, slug], { env, encoding: 'utf8' });
 }
 function flag() {
   try { return fs.readFileSync(FLAG, 'utf8').trim(); } catch (e) { return null; }
@@ -106,6 +110,23 @@ check('mixed-case slug lowercased + written', flag() === 'craig-larman');
 reset();
 tracker('/ghost-me ../../etc/passwd');
 check('path-traversal slug rejected', flag() === null);
+
+// --- ghost-set.js (picker-path writer) -----------------------------------
+reset();
+ghostSet('john-cutler');
+check('ghost-set writes valid slug', flag() === 'john-cutler');
+reset();
+ghostSet('nonexistent-person');
+check('ghost-set rejects unknown slug', flag() === null);
+reset();
+ghostSet('../../etc/passwd');
+check('ghost-set rejects traversal', flag() === null);
+reset();
+ghostSet('');
+check('ghost-set no-ops on empty', flag() === null);
+reset();
+ghostSet('John-Cutler');
+check('ghost-set lowercases slug', flag() === 'john-cutler');
 
 // --- empty / malformed input ---------------------------------------------
 reset();
