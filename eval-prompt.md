@@ -2,15 +2,15 @@
 
 Use this prompt for every ghost's token density eval. Same stimulus every time = comparable baselines across ghosts.
 
----
-
-## Prompt to send both agents
-
-> Please review this pull request and give your assessment.
+Send the text below verbatim to both agents. Do not fetch the PR — all context is already here.
 
 ---
 
-## PR context to include
+## Prompt (send this to both agents, verbatim)
+
+Review the following pull request and give your assessment. All context is provided below — do not fetch any URLs or use any tools.
+
+---
 
 **PR:** [Flight] Resolve models before JSON.stringify
 **Repo:** facebook/react
