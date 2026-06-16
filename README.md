@@ -63,7 +63,11 @@ explain me this repo https://github.com/openclaw/openclaw
 
 **What Claude does then:**
 
-Claude reads `corpus/[slug]/` only — never other ghosts' material. It runs four extraction passes (heuristics, principles, biases, voice) over your source files, then distils the results into a single system prompt grounded in the expert's actual words. It never invents content not in the corpus. Finally it runs a token-density eval to benchmark the ghost against default Claude. Thin corpus (< 5 files) still works, but ghost quality drops — Claude will warn you.
+- **Reads only `corpus/[slug]/`** — never other ghosts' material
+- **Runs four extraction passes** over your files — heuristics, principles, biases, voice
+- **Distils them into one system prompt**, grounded in the expert's actual words — never invents anything not in the corpus
+- **Runs a token-density eval** to benchmark the ghost against default Claude
+- **NB:** thin corpus (< 5 files) still works, but ghost quality drops — Claude will warn you
 
 **What you get:**
 
