@@ -14,7 +14,7 @@ Then ask anything. Say **"stop"** or **"exit"** to end the session.
 
 ---
 
-## Example session
+## Example session ghosting Donald J. Trump
 
 ```
 /ghost-me trump
