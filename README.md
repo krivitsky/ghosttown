@@ -79,6 +79,19 @@ Manage it later:
 
 ---
 
+## Ghost persistence
+
+A ghost you activate **stays active** — across turns, across `/clear`, and into new sessions. Two hooks keep it that way:
+
+- **On session start**, the full ghost profile is re-injected, so the persona survives context compression instead of quietly drifting back to default Claude.
+- **On every turn**, a one-line reminder re-anchors the identity.
+
+Activation persists via a small flag file (`~/.claude/.ghost-active`) holding the active slug. To **deactivate**, say a ghost-scoped phrase: **"stop ghost"**, **"exit ghost"**, or **`/ghost-me off`**. Bare "stop" and "exit" are left alone — they're ordinary words, not off-switches.
+
+Persistence triggers on the single-shot form `/ghost-me <slug>`. (Run bare `/ghost-me`, pick from the list, and the persona loads for that session but isn't flagged for persistence — re-run as `/ghost-me <slug>` to persist it.)
+
+---
+
 ## The bigger picture
 
 Copying how someone talks is the easy part. It makes a nice demo. It doesn't make a business. The real value is bigger than that.

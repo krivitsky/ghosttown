@@ -4,5 +4,31 @@
   "version": "0.3.0",
   "keywords": ["persona", "ghost", "agile", "LeSS", "GLAD", "deming", "product-management", "cutler"],
   "author": { "name": "Alexey Krivitsky" },
-  "homepage": "https://github.com/krivitsky/ghosttown"
+  "homepage": "https://github.com/krivitsky/ghosttown",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/ghost-activate.js\"",
+            "timeout": 5,
+            "statusMessage": "Loading ghost persona..."
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node \"${CLAUDE_PLUGIN_ROOT}/hooks/ghost-mode-tracker.js\"",
+            "timeout": 5,
+            "statusMessage": "Tracking ghost..."
+          }
+        ]
+      }
+    ]
+  }
 }

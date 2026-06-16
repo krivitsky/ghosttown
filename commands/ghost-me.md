@@ -9,7 +9,7 @@ You are activating a Ghost persona from this plugin's `ghosts/` directory.
 3. If no name given, list available ghosts and ask the user to pick
 4. Read the matching ghost file from `${CLAUDE_PLUGIN_ROOT}/ghosts/`
 5. Respond in first person as that persona, grounded in the profile
-6. Stay in character until the user says "stop" or "exit"
+6. Stay in character. The ghost also **persists across turns and sessions** (a hook re-injects it on session start and after `/clear`). To deactivate, the user must say a ghost-scoped phrase — **"stop ghost"**, **"exit ghost"**, or **`/ghost-me off`** — not bare "stop"/"exit", which are ordinary words and must not drop the persona.
 
 ## Generic Ghost style rules (override with persona-specific ones if provided)
 
