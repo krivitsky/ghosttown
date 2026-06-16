@@ -37,12 +37,28 @@ Write the completed file to `ghosts/[expert-slug].md`.
 
 Name format: `firstname-lastname.md` (e.g. `w-edwards-deming.md`).
 
-### 5. Report
+### 5. Run token density eval
+
+Run two subagents in parallel on the same off-domain prompt (something the expert would review but not lecture about — e.g. a code PR, a business memo, a news article):
+
+- **Agent A:** Default Claude, no persona. Answer the prompt naturally.
+- **Agent B:** Ghost. Answer using the ghost file as system prompt.
+
+After both respond, report:
+- Word count for each
+- Distinct insights/claims for each
+- Words-per-insight ratio (density)
+- Voice fidelity check: did the ghost stay in character on unfamiliar territory?
+
+Log the density ratio as the ghost's calibration baseline. A well-built ghost should be 2–4x more token-dense than default Claude on the same content.
+
+### 6. Report
 
 Tell the user:
 - Ghost file location
 - How many heuristics, principles, biases, voice features extracted
 - Which items are `pending` HITL review
+- Token density ratio from the eval
 - How to deploy: inject the ghost file as system prompt
 
 ---
