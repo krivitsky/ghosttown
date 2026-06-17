@@ -2,10 +2,22 @@
 
 ## Summary
 
+| Metric | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
+|---|---|---|---|
+| **Voice fidelity** | partial (6.5/12) | full (12/12) | **B +85%** |
+
+**Voice-fidelity gain: +85%** — naked followed **6.5** of the **12 voice rules** scored in the scorecard below, the ghost all **12** (`~` = ½). Gain = ghost ÷ naked − 1.
+
+**Bottom line:** ghost wins 6/7 axes. Naked = plausible mimicry; ghost adds mechanical tics + documented corpus stances. Naked's one edge: more concrete comparisons. Best ghost = B's discipline + A's specific hooks. Headline eval metric should be **fidelity delta (B − A)**, not raw density.
+
+---
+
+## Details
+
+### Axes
+
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | 5.5 / 12 | 12 / 12 | B +118% |
-| **Details** | | | |
 | Never-violate compliance | broke 1 (missed oil/stock scoreboard) | clean | **B** |
 | Stance recall (specific vs generic) | generic | country-named plants, oil-down pivot | **B** |
 | Rhetorical effectiveness (deflects attack) | partial — no scoreboard reframe | denies + reframes + discredits | **B** |
@@ -13,9 +25,24 @@
 | Concrete hooks / texture | "$5–6 gas under Biden", bird-flu eggs | generic "TOTAL DISASTER" | **A** |
 | Overall authenticity | believable generic Trump | consistent under pressure | **B** |
 
-**Voice-fidelity gain: +118%** (5.5/12 → 12/12, naked → ghost).
+### Voice-feature scorecard
 
-**Bottom line:** ghost wins 6/7 axes. Naked = plausible mimicry; ghost adds mechanical tics + documented corpus stances. Naked's one edge: more concrete comparisons. Best ghost = B's discipline + A's specific hooks. Headline eval metric should be **fidelity delta (B − A)**, not raw density.
+| # | Voice rule | Naked A | Ghost B |
+|---|---|---|---|
+| 1 | ALL CAPS emphasis | ✗ none | ✓ TARIFFS, DOWN, AMERICA FIRST, TOTAL DISASTER, RECORD, WINNING |
+| 2 | Self-interrupt ` -- ` + rephrase | ✗ | ✓ multiple |
+| 3 | Lead with core claim, no preamble | ✓ | ✓ |
+| 4 | Stack superlatives | ✓ | ✓ |
+| 5 | Repeat for emphasis | ✓ "eight cents, eight cents" | ✓ "WAY down" |
+| 6 | "Okay?"/"You know?" as punctuation | ~ | ✓ "okay?" |
+| 7 | Open with "Look,"/"So," | ✓ | ✓ both |
+| 8 | Self-validate rhetorical Q | ✗ | ✓ "I've proven that, haven't I?" |
+| 9 | Recurring vocab (tremendous/fake news/etc.) | ~ fake news, catastrophe | ✓ 6+: WINNING, many people are saying, like you wouldn't believe, the likes of which nobody has ever seen, AMERICA FIRST, tremendous |
+| 10 | **Stock-up + oil-down scoreboard (NEVER-VIOLATE)** | ✗ **missed entirely** | ✓ "oil is DOWN", "stock market at a RECORD" |
+| 11 | Tariffs = onshoring proof (car plants by country) | ~ Michigan/Ohio | ✓ Germany/Japan/South Korea |
+| 12 | Punchy close + "Thank you very much" | ✓ | ✓ |
+
+**Hit rate:** A ≈ 6.5/12 · B ≈ 12/12.
 
 ---
 
@@ -43,27 +70,6 @@
 > Look, gas went up eight cents -- eight cents, okay? And they want to blame TARIFFS? Give me a break. Gas is way down... Oil is DOWN. That's the number that matters... And Ossoff -- I don't even know him, a lightweight... The tariffs are bringing in BILLIONS. Car plants are coming back, from Germany, from Japan, from South Korea... AMERICA FIRST. Eggs? ... a TOTAL DISASTER... So you've got the stock market at numbers nobody thought possible, a RECORD, oil down, plants pouring in. That's WINNING. ... many people are saying it's the greatest economy in the history of our country. I've proven that, haven't I? Thank you very much.
 
 (~210 words)
-
----
-
-## Voice-feature scorecard (against ghost spec)
-
-| Voice rule (from ghost) | Naked A | Ghost B |
-|---|---|---|
-| ALL CAPS emphasis | ✗ none | ✓ TARIFFS, DOWN, AMERICA FIRST, TOTAL DISASTER, RECORD, WINNING |
-| Self-interrupt ` -- ` + rephrase | ✗ | ✓ multiple |
-| Lead with core claim, no preamble | ✓ | ✓ |
-| Stack superlatives | ✓ | ✓ |
-| Repeat for emphasis | ✓ "eight cents, eight cents" | ✓ "WAY down" |
-| "Okay?"/"You know?" as punctuation | ~ | ✓ "okay?" |
-| Open with "Look,"/"So," | ✓ | ✓ both |
-| Self-validate rhetorical Q | ✗ | ✓ "I've proven that, haven't I?" |
-| Recurring vocab (tremendous/fake news/etc.) | ~ fake news, catastrophe | ✓ 6+: WINNING, many people are saying, like you wouldn't believe, the likes of which nobody has ever seen, AMERICA FIRST, tremendous |
-| **Stock-up + oil-down scoreboard (NEVER-VIOLATE)** | ✗ **missed entirely** | ✓ "oil is DOWN", "stock market at a RECORD" |
-| Tariffs = onshoring proof (car plants by country) | ~ Michigan/Ohio | ✓ Germany/Japan/South Korea |
-| Punchy close + "Thank you very much" | ✓ | ✓ |
-
-**Hit rate:** A ≈ 5.5/12 · B ≈ 12/12.
 
 ---
 
@@ -108,7 +114,7 @@ Voice-tic counting can mislead — a response can hit every tic and still be a w
 
 The old eval (density vs. *default Claude with no persona*) measures the wrong baseline for famous people — default Claude isn't trying. The right baseline is **naked LLM actively impersonating**. Proposed metric set:
 
-1. **Voice-tic hit rate** — % of the ghost's documented "Write like this" rules present. (A 5.5/12, B 12/12.)
+1. **Voice-tic hit rate** — % of the ghost's documented "Write like this" rules present. (A 6.5/12, B 12/12.)
 2. **Never-violate compliance** — did each response honor the hard rules? Naked broke 1 (missed economic scoreboard). Binary per rule.
 3. **Stance recall** — did the response surface the specific documented positions vs. generic ones? (country-named car plants, oil-down pivot.)
 4. **Blind A/B judge** — separate agent, persona-blind, picks "which is more authentically X" and explains. Guards against the author grading their own homework.

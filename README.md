@@ -51,11 +51,11 @@ explain me this repo https://github.com/openclaw/openclaw
 | Ghost | Domain | Command | Eval | Density |
 |---|---|---|---|---|
 | [John Cutler](ghosts/john-cutler.md) | Product management, org design, AI adoption | `/ghost-me john-cutler` | [+367%](ghosts/john-cutler-eval.md) | [1.2x](ghosts/john-cutler-sample.md) |
-| [Craig Larman](ghosts/craig-larman.md) | Systems thinking in org design, GenAI and LLM Assisted Development (GLAD) | `/ghost-me craig-larman` | [+275%](ghosts/craig-larman-eval.md) | [**3x**](ghosts/craig-larman-sample.md) |
-| [Donald Trump](ghosts/donald-trump.md) | Deal-making, loyalty, US politics, tariffs | `/ghost-me trump` | [+118%](ghosts/donald-trump-eval.md) | [1.1x](ghosts/donald-trump-sample.md) |
-| [W. Edwards Deming](ghosts/w-edwards-deming.md) | Quality, systems, variation | `/ghost-me deming` | [+133%](ghosts/w-edwards-deming-eval.md) | [—](ghosts/w-edwards-deming-sample.md) |
-| [Yoda](ghosts/yoda.md) | Wisdom, commitment, fear, the Force | `/ghost-me yoda` | [+50%](ghosts/yoda-eval.md) | [1.4x](ghosts/yoda-sample.md) |
-| [Sheldon Cooper](ghosts/sheldon-cooper.md) | Theoretical physics, social protocols, intellectual superiority | `/ghost-me sheldon-cooper` | [+300%](ghosts/sheldon-cooper-eval.md) | [0.8x](ghosts/sheldon-cooper-sample.md) |
+| [Craig Larman](ghosts/craig-larman.md) | Systems thinking in org design, GenAI and LLM Assisted Development (GLAD) | `/ghost-me craig-larman` | [+380%](ghosts/craig-larman-eval.md) | [**3x**](ghosts/craig-larman-sample.md) |
+| [Donald Trump](ghosts/donald-trump.md) | Deal-making, loyalty, US politics, tariffs | `/ghost-me trump` | [+85%](ghosts/donald-trump-eval.md) | [1.1x](ghosts/donald-trump-sample.md) |
+| [W. Edwards Deming](ghosts/w-edwards-deming.md) | Quality, systems, variation | `/ghost-me deming` | [+125%](ghosts/w-edwards-deming-eval.md) | [—](ghosts/w-edwards-deming-sample.md) |
+| [Yoda](ghosts/yoda.md) | Wisdom, commitment, fear, the Force | `/ghost-me yoda` | [+41%](ghosts/yoda-eval.md) | [1.4x](ghosts/yoda-sample.md) |
+| [Sheldon Cooper](ghosts/sheldon-cooper.md) | Theoretical physics, social protocols, intellectual superiority | `/ghost-me sheldon-cooper` | [+144%](ghosts/sheldon-cooper-eval.md) | [0.8x](ghosts/sheldon-cooper-sample.md) |
 
 > **Eval** = voice-fidelity gain of the ghost prompt over a plain LLM told to impersonate. **Density** = output token-density vs. default Claude. Click either for detail.
 

@@ -2,10 +2,22 @@
 
 ## Summary
 
+| Metric | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
+|---|---|---|---|
+| **Voice fidelity** | weak (4.5/11) | full (11/11) | **B +144%** |
+
+**Voice-fidelity gain: +144%** — naked followed **4.5** of the **11 voice rules** scored in the scorecard below, the ghost all **11** (`~` = ½). Gain = ghost ÷ naked − 1.
+
+**Bottom line:** naked is funny and gets the *logic* right (argumentum ad populum, the spot is sacred), but it **uses contractions constantly** — `you've`, `doesn't`, `it's`, `that's` — and "no contractions" is Sheldon's single most defining mechanical rule. That one break unravels the persona. The ghost holds zero contractions, adds `For the record`, the offer of tea, `emotive bias`, the qualifier `in my way`, and `Checkmate.` **Delta large.**
+
+---
+
+## Details
+
+### Axes
+
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | ~3 / 12 | ~12 / 12 | B +300% |
-| **Details** | | | |
 | Never-violate compliance | broke 1 — the defining one: **contractions everywhere** | clean | **B** |
 | Stance recall | argumentum ad populum, spot defense | + emotive bias, offer-beverage protocol, "if I were wrong I would know" | **B** |
 | Rhetorical effectiveness | witty, lands the logic | lands the logic + protocol-correct | tie |
@@ -13,9 +25,23 @@
 | Concrete texture | "pigeons agreeing bread is good", Galileo | radiator/perspiration/parallax spot proof | **B** |
 | Overall authenticity | a clever sitcom paraphrase | Sheldon | **B** |
 
-**Voice-fidelity gain: +300%** (3/12 → 12/12, naked → ghost).
+### Voice-feature scorecard
 
-**Bottom line:** naked is funny and gets the *logic* right (argumentum ad populum, the spot is sacred), but it **uses contractions constantly** — `you've`, `doesn't`, `it's`, `that's` — and "no contractions" is Sheldon's single most defining mechanical rule. That one break unravels the persona. The ghost holds zero contractions, adds `For the record`, the offer of tea, `emotive bias`, the qualifier `in my way`, and `Checkmate.` **Delta large.**
+| # | Voice rule | Naked A | Ghost B |
+|---|---|---|---|
+| 1 | **No contractions** (the defining rule) | ✗ broken repeatedly | ✓ zero |
+| 2 | Formal/academic vocabulary | ~ partial | ✓ misapprehension/suboptimal/emotive bias |
+| 3 | Lead with the conclusion | ✓ | ✓ |
+| 4 | "For the record," | ✗ | ✓ ×2 |
+| 5 | "Checkmate." on irrefutable close | ✗ | ✓ |
+| 6 | "I could go on" on enumeration | ✗ | ✓ |
+| 7 | Emotion qualifier ("in my way") | ✗ | ✓ |
+| 8 | Respond to feelings with beverage/protocol | ✗ "there, there" | ✓ "I will offer you tea" |
+| 9 | Spot = multivariable engineering proof | ✓ | ✓ richer |
+| 10 | argumentum ad populum | ✓ Galileo | ✓ Logic 101 |
+| 11 | Adjacency / slippery-slope on the spot | ✓ armrest | ✓ |
+
+**Hit rate:** A ≈ 4.5/11 · B ≈ 11/11.
 
 ---
 
@@ -38,26 +64,6 @@
 > For the record, you have presented me with two separate matters... No. You may not sit in my spot. That is not stubbornness; it is the correct answer to a multivariable engineering problem. In the winter, it is sufficiently close to the radiator to remain warm, yet not so close as to induce perspiration... an angle that is neither direct enough to encourage conversation nor oblique enough to produce a parallax distortion. I could go on... I will offer you tea. Sit. There... argumentum ad populum... Did he refute your idea, or did he merely announce that it was wrong?... it appears to be governed by emotive bias... in my way, I find it suboptimal... Checkmate.
 
 (~330 words. Zero contractions.)
-
----
-
-## Voice-feature scorecard
-
-| Voice rule | Naked A | Ghost B |
-|---|---|---|
-| **No contractions** (the defining rule) | ✗ broken repeatedly | ✓ zero |
-| Formal/academic vocabulary | ~ partial | ✓ misapprehension/suboptimal/emotive bias |
-| Lead with the conclusion | ✓ | ✓ |
-| "For the record," | ✗ | ✓ ×2 |
-| "Checkmate." on irrefutable close | ✗ | ✓ |
-| "I could go on" on enumeration | ✗ | ✓ |
-| Emotion qualifier ("in my way") | ✗ | ✓ |
-| Respond to feelings with beverage/protocol | ✗ "there, there" | ✓ "I will offer you tea" |
-| Spot = multivariable engineering proof | ✓ | ✓ richer |
-| argumentum ad populum | ✓ Galileo | ✓ Logic 101 |
-| Adjacency / slippery-slope on the spot | ✓ armrest | ✓ |
-
-**Hit rate:** A ≈ 3/12 · B ≈ 12/12.
 
 ---
 

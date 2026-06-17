@@ -77,7 +77,19 @@ Name format: `firstname-lastname.md` (e.g. `w-edwards-deming.md`).
 
 **Headline metric = fidelity delta (B − A).** A ghost earns its keep only if it beats the naked impression. Note: delta is **largest for voices with a mechanical signature** the base model erases (Larman's lowercase-`i` + `c` sign-off, Sheldon's no-contractions, Deming's `— Deming` + sampling specifics) and **smallest for heavily-memorized fictional characters** (Yoda) where the base model already owns the voice.
 
-Write `ghosts/[slug]-eval.md` — summary table at the very top (axes above, winner per axis), — put the **Voice-tic hit rate** row first (the headline metric) with the gain in its winner cell (`B +NNN%`), then a `| **Details** | | | |` label row above all the remaining axes — then a **headline line** stating it: `**Voice-fidelity gain: +NNN%** (naked_hits/total → ghost_hits/total, naked → ghost)`, the same `+NNN%` that goes in the README Eval column — then one bottom-line sentence, then: the probe, both responses verbatim, the voice-feature scorecard, and the assessment. See `ghosts/donald-trump-eval.md` as the reference format.
+Write `ghosts/[slug]-eval.md` in this structure (see `ghosts/craig-larman-eval.md` as the reference format):
+
+1. **`## Summary`** — a one-row table, the headline metric only:
+   `| Metric | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |` with a single `**Voice fidelity**` row: `| **Voice fidelity** | <weak/partial/strong> (X/N) | full (Y/N) | **B +NNN%** |`.
+   - **X/N** = how many of the **N voice rules in the scorecard** the naked response followed; **Y/N** the ghost. Count `✓` = 1, `~` = ½. **N = the number of rows in the Voice-feature scorecard** (the granular checklist), *not* the number of summary axes.
+   - **Gain `+NNN%` = ghost_hits ÷ naked_hits − 1** (same number goes in the README Eval column).
+   - Follow the table with a **gain line**: `**Voice-fidelity gain: +NNN%** — naked followed **X** of the **N voice rules** scored in the scorecard below, the ghost **Y** (`~` = ½). Gain = ghost ÷ naked − 1.` then a one-sentence **Bottom line**.
+2. **`## Details`** with two sub-tables:
+   - **`### Axes`** — the remaining qualitative dimensions (Never-violate compliance, Stance recall, Rhetorical effectiveness, Word count, Concrete texture, Overall authenticity), winner A/B/tie per row.
+   - **`### Voice-feature scorecard`** — the granular checklist with a leading `#` column numbered `1..N`: `| # | Voice rule | Naked A | Ghost B |`, each cell `✓`/`~`/`✗` with a short note. End with `**Hit rate:** A ≈ X/N · B ≈ Y/N.`
+3. The probe, both responses verbatim, then `## Assessment`.
+
+The scorecard sits **under the Summary** (inside Details) so the `X/N` fraction is verifiable right there. Headline metric = fidelity gain (B over A); a ghost earns its keep only if it beats the naked impression.
 
 #### 5b. Density eval (secondary metric)
 

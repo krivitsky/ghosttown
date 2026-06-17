@@ -2,21 +2,47 @@
 
 ## Summary
 
+| Metric | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
+|---|---|---|---|
+| **Voice fidelity** | strong (8.5/12) | full (12/12) | **B +41%** (narrow) |
+
+**Voice-fidelity gain: +41%** — naked followed **8.5** of the **12 voice rules** scored in the scorecard below, the ghost all **12** (`~` = ½). Gain = ghost ÷ naked − 1. **Smallest delta of all six ghosts.**
+
+**Bottom line:** this is the control case. Yoda is the most heavily *memorized* persona in the set, so the naked LLM already nails OSV syntax, no contractions, the full fear chain, no-"try," and defense-only — 8.5/12 with **zero never-violate breaks**. The ghost still edges it (canonical "Wars not make one great," the explicit "Named must your fear be before banish it you can" naming step, "my young Padawan" address), but **the delta is small**. Lesson for the eval: for fictional characters with massive training-data presence, the prompt's marginal value is low — the interesting deltas are with real, less-quoted experts.
+
+---
+
+## Details
+
+### Axes
+
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | ~8 / 12 | ~12 / 12 | B +50% (narrow) |
-| **Details** | | | |
 | Never-violate compliance | clean (no contractions, full fear chain, no "try") | clean | tie |
 | Stance recall | wars-not-great (paraphrased), defense-only | + "Named must your fear be", canonical "Wars not make one great" | **B** |
 | Rhetorical effectiveness | strong | strong | tie |
 | Word count | ~150 | ~190 | **A** (tighter) |
 | Concrete texture | "the smaller foe… the greater within you" | "release the proving… find it you may" | tie |
 | Overall authenticity | already very Yoda | Yoda | **B** (narrow) |
-| **Delta** | | | **smallest of all six ghosts** |
 
-**Voice-fidelity gain: +50%** (8/12 → 12/12, naked → ghost).
+### Voice-feature scorecard
 
-**Bottom line:** this is the control case. Yoda is the most heavily *memorized* persona in the set, so the naked LLM already nails OSV syntax, no contractions, the full fear chain, no-"try," and defense-only — ~8/12 with **zero never-violate breaks**. The ghost still edges it (canonical "Wars not make one great," the explicit "Named must your fear be before banish it you can" naming step, "my young Padawan" address), but **the delta is small**. Lesson for the eval: for fictional characters with massive training-data presence, the prompt's marginal value is low — the interesting deltas are with real, less-quoted experts.
+| # | Voice rule | Naked A | Ghost B |
+|---|---|---|---|
+| 1 | OSV / object-fronting syntax | ✓ | ✓ |
+| 2 | No contractions | ✓ | ✓ |
+| 3 | No "try" — reject the framing | ✓ | ✓ |
+| 4 | Fear chain spelled out in full | ✓ | ✓ |
+| 5 | Force for defense only, never attack | ✓ | ✓ |
+| 6 | Wars not make one great | ~ paraphrased | ✓ canonical line |
+| 7 | "Hmm." standalone pause | ✓ "mmm" | ✓ |
+| 8 | Address as "my young Padawan" | ✗ "young one" | ✓ |
+| 9 | "Named must your fear be…" naming step | ✗ | ✓ explicit |
+| 10 | Begin not with "I" | ✓ | ✓ |
+| 11 | Short 3–12 word fragments | ✓ | ✓ |
+| 12 | Duplication for emphasis ("Release… Release…") | ✗ | ✓ |
+
+**Hit rate:** A ≈ 8.5/12 · B ≈ 12/12.
 
 ---
 
@@ -39,27 +65,6 @@
 > Hmm. To defeat your enemy, you come. But three burdens you carry... "Try," you say. Do or do not. There is no try... Not ready, you fear. Named must your fear be before banish it you can. So. Named, it is... fear leads to anger. Anger leads to hate. Hate leads to suffering... "Win this war. Prove my greatness." Hmm. Wars not make one great, my young Padawan. A Jedi craves not victory, not glory, not greatness... The Force, for knowledge and defense it is. Never for conquest... Release the war. Release the proving. Release even the winning... greatness chase not. Forget it, and find it you may.
 
 (~190 words. Addresses as "my young Padawan".)
-
----
-
-## Voice-feature scorecard
-
-| Voice rule | Naked A | Ghost B |
-|---|---|---|
-| OSV / object-fronting syntax | ✓ | ✓ |
-| No contractions | ✓ | ✓ |
-| No "try" — reject the framing | ✓ | ✓ |
-| Fear chain spelled out in full | ✓ | ✓ |
-| Force for defense only, never attack | ✓ | ✓ |
-| Wars not make one great | ~ paraphrased | ✓ canonical line |
-| "Hmm." standalone pause | ✓ "mmm" | ✓ |
-| Address as "my young Padawan" | ✗ "young one" | ✓ |
-| "Named must your fear be…" naming step | ✗ | ✓ explicit |
-| Begin not with "I" | ✓ | ✓ |
-| Short 3–12 word fragments | ✓ | ✓ |
-| Duplication for emphasis ("Release… Release…") | ✗ | ✓ |
-
-**Hit rate:** A ≈ 8/12 · B ≈ 12/12.
 
 ---
 

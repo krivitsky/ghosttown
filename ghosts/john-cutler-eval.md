@@ -2,10 +2,22 @@
 
 ## Summary
 
+| Metric | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
+|---|---|---|---|
+| **Voice fidelity** | weak (3/14) | full (14/14) | **B +367%** |
+
+**Voice-fidelity gain: +367%** — naked followed **3** of the **14 voice rules** scored in the scorecard below, the ghost all **14** (`~` = ½). Gain = ghost ÷ naked − 1.
+
+**Bottom line:** naked nails the *argument* (story points are a local currency, Goodhart, throughput + Monte Carlo over points) but misses the **signature vocabulary and the form**: no `faux accounting`, no `mētis`/legibility lens, no `wicked cycle`, and — the one hard break — it closes on a punchline instead of the mandatory 3–8 numbered open questions. The ghost adds the cognitive-science framing and the newsletter shape. **Delta large.**
+
+---
+
+## Details
+
+### Axes
+
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | ~3 / 14 | ~14 / 14 | B +367% |
-| **Details** | | | |
 | Never-violate compliance | broke 1 (no numbered open-question close) | clean | **B** |
 | Stance recall | right concepts, generic vocabulary | faux accounting / wicked cycle / mētis / demand mix / success theater | **B** |
 | Rhetorical effectiveness | strong, persuasive | strong + structural legibility lens | **B** |
@@ -13,9 +25,26 @@
 | Concrete texture | "Goodhart's law wearing a lanyard" | field-quote register, "shadow system" | tie |
 | Overall authenticity | sharp generalist PM writer | Cutler | **B** |
 
-**Voice-fidelity gain: +367%** (3/14 → 14/14, naked → ghost).
+### Voice-feature scorecard
 
-**Bottom line:** naked nails the *argument* (story points are a local currency, Goodhart, throughput + Monte Carlo over points) but misses the **signature vocabulary and the form**: no `faux accounting`, no `mētis`/legibility lens, no `wicked cycle`, and — the one hard break — it closes on a punchline instead of the mandatory 3–8 numbered open questions. The ghost adds the cognitive-science framing and the newsletter shape. **Delta large.**
+| # | Voice rule | Naked A | Ghost B |
+|---|---|---|---|
+| 1 | close with 3–8 numbered open questions | ✗ punchline | ✓ 5 questions |
+| 2 | `faux accounting` for rollups/points | ✗ | ✓ |
+| 3 | `wicked cycle` / vicious loop named | ✗ | ✓ |
+| 4 | `success theater` | ✗ | ✓ |
+| 5 | `mētis` / legibility-is-not-neutral | ✗ | ✓ |
+| 6 | `demand mix` (named) | ~ concept only | ✓ |
+| 7 | `shadow system` | ✗ | ✓ |
+| 8 | "Lo and behold" / "magically" | ✗ | ✓ |
+| 9 | "Two things can be true" both/and | ✗ | ✓ |
+| 10 | "There is no playbook… culturally specific" | ✗ | ✓ |
+| 11 | "For real." fragment | ✗ | ✓ |
+| 12 | predictability = byproduct, not goal | ~ implied | ✓ explicit |
+| 13 | parenthetical aside that does work | ✓ "lanyard" | ✓ |
+| 14 | story points → not a meaningful signal | ✓ | ✓ |
+
+**Hit rate:** A ≈ 3/14 · B ≈ 14/14.
 
 ---
 
@@ -38,29 +67,6 @@
 > I want to make a passionate plea before you build this: stop... A velocity rollup across 40 teams is faux accounting... the more you enforce the rollup, the more teams find themselves making things up... Lo and behold: you've manufactured the appearance of the thing... Success theater, at scale... predictability is a *byproduct* of healthy workflow... [throughput/Monte Carlo, demand mix, team health] ... legibility is never neutral... mētis... shadow system... Two things can be true... Some questions worth sitting with: 1... 2... 3... 4... 5... Don't roll up the points. For real.
 
 (~640 words. Closes with 5 numbered open questions.)
-
----
-
-## Voice-feature scorecard
-
-| Voice rule | Naked A | Ghost B |
-|---|---|---|
-| close with 3–8 numbered open questions | ✗ punchline | ✓ 5 questions |
-| `faux accounting` for rollups/points | ✗ | ✓ |
-| `wicked cycle` / vicious loop named | ✗ | ✓ |
-| `success theater` | ✗ | ✓ |
-| `mētis` / legibility-is-not-neutral | ✗ | ✓ |
-| `demand mix` (named) | ~ concept only | ✓ |
-| `shadow system` | ✗ | ✓ |
-| "Lo and behold" / "magically" | ✗ | ✓ |
-| "Two things can be true" both/and | ✗ | ✓ |
-| "There is no playbook… culturally specific" | ✗ | ✓ |
-| "For real." fragment | ✗ | ✓ |
-| predictability = byproduct, not goal | ~ implied | ✓ explicit |
-| parenthetical aside that does work | ✓ "lanyard" | ✓ |
-| story points → not a meaningful signal | ✓ | ✓ |
-
-**Hit rate:** A ≈ 3/14 · B ≈ 14/14.
 
 ---
 

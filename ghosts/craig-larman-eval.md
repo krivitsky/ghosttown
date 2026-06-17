@@ -2,10 +2,22 @@
 
 ## Summary
 
+| Metric | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
+|---|---|---|---|
+| **Voice fidelity** | weak (2.5/12) | full (12/12) | **B +380%** |
+
+**Voice-fidelity gain: +380%** — naked followed **2.5** of the **12 voice rules** scored in the scorecard below, the ghost all **12** (`~` = ½). Gain = ghost ÷ naked − 1.
+
+**Bottom line:** naked gets the **content** almost entirely right (feature teams, no SAFe, culture-follows-structure) but reads as a generic agile consultant — capital `I`, a "— Craig" sign-off, and **markdown bold** that the ghost spec explicitly forbids. The ghost adds the whole mechanical voice (lowercase `i`, `c` sign-off, `;)`, abbreviations, `NB:`/`===`, betting framing, Larman's Laws by number). **Delta is large** — Larman's voice is a mechanical signature the base model smooths away.
+
+---
+
+## Details
+
+### Axes
+
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | ~4 / 15 | ~15 / 15 | B +275% |
-| **Details** | | | |
 | Never-violate compliance | broke 4 (capital `I`, wrong sign-off, **bold**, no betting framing, no Law-by-number) | clean | **B** |
 | Stance recall | right verdicts, generic framing | descaling / naive fractalism / Law 5 / change theatre / no-proxy-PO | **B** |
 | Rhetorical effectiveness | strong, correct | strong, sharper structural reframe | tie |
@@ -13,9 +25,24 @@
 | Concrete texture | "12 teams every feature spans 3 components" | "in 1000 futures bet 800+", Lisbon-style specifics | tie |
 | Overall authenticity | a good consultant who agrees with Larman | Larman | **B** |
 
-**Voice-fidelity gain: +275%** (4/15 → 15/15, naked → ghost).
+### Voice-feature scorecard
 
-**Bottom line:** naked gets the **content** almost entirely right (feature teams, no SAFe, culture-follows-structure) but reads as a generic agile consultant — capital `I`, a "— Craig" sign-off, and **markdown bold** that the ghost spec explicitly forbids. The ghost adds the whole mechanical voice (lowercase `i`, `c` sign-off, `;)`, abbreviations, `NB:`/`===`, betting framing, Larman's Laws by number). **Delta is large** — Larman's voice is a mechanical signature the base model smooths away.
+| # | Voice rule | Naked A | Ghost B |
+|---|---|---|---|
+| 1 | lowercase `i` / drop pronoun | ✗ capital I | ✓ |
+| 2 | sign `c` only | ✗ "— Craig" | ✓ |
+| 3 | `*single asterisks*`, never `**bold**` | ✗ used **bold** (forbidden) | ✓ |
+| 4 | abbreviations (thx/pls/tis/PB/PO) | ✗ | ✓ |
+| 5 | `;)` embedded | ✗ | ✓ ×3 |
+| 6 | `NB:` / `===` structure | ✗ | ✓ |
+| 7 | betting framing for forecasts | ✗ | ✓ "in 1000 futures bet 800+" |
+| 8 | Larman's Laws by number | ✗ | ✓ Law 5 |
+| 9 | descaling / naive fractalism / local optimization | ~ partial | ✓ all + change theatre |
+| 10 | feature teams non-negotiable | ✓ | ✓ |
+| 11 | culture follows structure (not mindset-first) | ✓ | ✓ |
+| 12 | no proxy/supporting PO | ✗ | ✓ slippery slope |
+
+**Hit rate:** A ≈ 2.5/12 · B ≈ 12/12.
 
 ---
 
@@ -38,27 +65,6 @@
 > hi and thx for asking! (1) no — pls don't. SAFe is a framework for *adding* complexity... tis *naive fractalism*... what you want is *descaling*... in 1000 futures i'd bet 800+ that bolting SAFe on top makes the 12-team coordination *worse* ;) (2) ... *culture follows structure* — Larman's Law 5... trying to make component teams "more collaborative" while leaving them as component teams is *change theatre*. it's pissing in the wind. ;) NB: "productive" component teams is a *local optimization*... === so, the actual sequence: (2a) change *structure* first... (2b) one PB, one PO... no proxy/supporting POs — very slippery slope... (2c) ship every sprint, from sprint 1... c
 
 (~360 words.)
-
----
-
-## Voice-feature scorecard
-
-| Voice rule | Naked A | Ghost B |
-|---|---|---|
-| lowercase `i` / drop pronoun | ✗ capital I | ✓ |
-| sign `c` only | ✗ "— Craig" | ✓ |
-| `*single asterisks*`, never `**bold**` | ✗ used **bold** (forbidden) | ✓ |
-| abbreviations (thx/pls/tis/PB/PO) | ✗ | ✓ |
-| `;)` embedded | ✗ | ✓ ×3 |
-| `NB:` / `===` structure | ✗ | ✓ |
-| betting framing for forecasts | ✗ | ✓ "in 1000 futures bet 800+" |
-| Larman's Laws by number | ✗ | ✓ Law 5 |
-| descaling / naive fractalism / local optimization | ~ partial | ✓ all + change theatre |
-| feature teams non-negotiable | ✓ | ✓ |
-| culture follows structure (not mindset-first) | ✓ | ✓ |
-| no proxy/supporting PO | ✗ | ✓ slippery slope |
-
-**Hit rate:** A ≈ 4/15 · B ≈ 15/15.
 
 ---
 
