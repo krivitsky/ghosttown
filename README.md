@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="images/ghost-icon.png" alt="Ghosttown" width="200">
+  <img src="images/logo.png" alt="Ghosttown" width="200">
 </p>
 
 # Ghosttown
