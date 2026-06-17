@@ -1,5 +1,7 @@
 <p align="center">
-  <img src="images/banner.png" alt="Ghosttown" width="480">
+  <img src="images/logo.png" alt="" width="14%" align="bottom">
+  <img src="images/logo.png" alt="Ghosttown" width="26%" align="bottom">
+  <img src="images/logo.png" alt="" width="18%" align="bottom">
 </p>
 
 # Ghosttown
