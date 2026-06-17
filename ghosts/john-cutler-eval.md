@@ -2,7 +2,7 @@
 
 ## Summary
 
-| Axis | Naked LLM (no ghost prompt) | Ghost prompt | Winner |
+| Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
 | Voice-tic hit rate | ~3 / 14 | ~14 / 14 | **B** |
 | Never-violate compliance | broke 1 (no numbered open-question close) | clean | **B** |
