@@ -4,13 +4,17 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | ~3 / 14 | ~14 / 14 | **B** |
+| **Summary** | | | |
+| **Voice-tic hit rate** | **~3 / 14** | **~14 / 14** | **B +367%** |
+| **Details** | | | |
 | Never-violate compliance | broke 1 (no numbered open-question close) | clean | **B** |
 | Stance recall | right concepts, generic vocabulary | faux accounting / wicked cycle / mētis / demand mix / success theater | **B** |
 | Rhetorical effectiveness | strong, persuasive | strong + structural legibility lens | **B** |
 | Word count | ~620 | ~640 | tie |
 | Concrete texture | "Goodhart's law wearing a lanyard" | field-quote register, "shadow system" | tie |
 | Overall authenticity | sharp generalist PM writer | Cutler | **B** |
+
+**Voice-fidelity gain: +367%** (3/14 → 14/14, naked → ghost).
 
 **Bottom line:** naked nails the *argument* (story points are a local currency, Goodhart, throughput + Monte Carlo over points) but misses the **signature vocabulary and the form**: no `faux accounting`, no `mētis`/legibility lens, no `wicked cycle`, and — the one hard break — it closes on a punchline instead of the mandatory 3–8 numbered open questions. The ghost adds the cognitive-science framing and the newsletter shape. **Delta large.**
 

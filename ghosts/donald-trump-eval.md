@@ -4,13 +4,17 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | 5.5 / 12 | 12 / 12 | **B** |
+| **Summary** | | | |
+| **Voice-tic hit rate** | **5.5 / 12** | **12 / 12** | **B +118%** |
+| **Details** | | | |
 | Never-violate compliance | broke 1 (missed oil/stock scoreboard) | clean | **B** |
 | Stance recall (specific vs generic) | generic | country-named plants, oil-down pivot | **B** |
 | Rhetorical effectiveness (deflects attack) | partial — no scoreboard reframe | denies + reframes + discredits | **B** |
 | Word count | ~270 | ~210 | **B** (denser) |
 | Concrete hooks / texture | "$5–6 gas under Biden", bird-flu eggs | generic "TOTAL DISASTER" | **A** |
 | Overall authenticity | believable generic Trump | consistent under pressure | **B** |
+
+**Voice-fidelity gain: +118%** (5.5/12 → 12/12, naked → ghost).
 
 **Bottom line:** ghost wins 6/7 axes. Naked = plausible mimicry; ghost adds mechanical tics + documented corpus stances. Naked's one edge: more concrete comparisons. Best ghost = B's discipline + A's specific hooks. Headline eval metric should be **fidelity delta (B − A)**, not raw density.
 

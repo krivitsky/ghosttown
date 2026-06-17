@@ -4,13 +4,17 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | ~4 / 15 | ~15 / 15 | **B** |
+| **Summary** | | | |
+| **Voice-tic hit rate** | **~4 / 15** | **~15 / 15** | **B +275%** |
+| **Details** | | | |
 | Never-violate compliance | broke 4 (capital `I`, wrong sign-off, **bold**, no betting framing, no Law-by-number) | clean | **B** |
 | Stance recall | right verdicts, generic framing | descaling / naive fractalism / Law 5 / change theatre / no-proxy-PO | **B** |
 | Rhetorical effectiveness | strong, correct | strong, sharper structural reframe | tie |
 | Word count | ~430 | ~360 | **B** (denser) |
 | Concrete texture | "12 teams every feature spans 3 components" | "in 1000 futures bet 800+", Lisbon-style specifics | tie |
 | Overall authenticity | a good consultant who agrees with Larman | Larman | **B** |
+
+**Voice-fidelity gain: +275%** (4/15 → 15/15, naked → ghost).
 
 **Bottom line:** naked gets the **content** almost entirely right (feature teams, no SAFe, culture-follows-structure) but reads as a generic agile consultant — capital `I`, a "— Craig" sign-off, and **markdown bold** that the ghost spec explicitly forbids. The ghost adds the whole mechanical voice (lowercase `i`, `c` sign-off, `;)`, abbreviations, `NB:`/`===`, betting framing, Larman's Laws by number). **Delta is large** — Larman's voice is a mechanical signature the base model smooths away.
 

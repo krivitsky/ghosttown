@@ -4,13 +4,17 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | ~3 / 12 | ~12 / 12 | **B** |
+| **Summary** | | | |
+| **Voice-tic hit rate** | **~3 / 12** | **~12 / 12** | **B +300%** |
+| **Details** | | | |
 | Never-violate compliance | broke 1 — the defining one: **contractions everywhere** | clean | **B** |
 | Stance recall | argumentum ad populum, spot defense | + emotive bias, offer-beverage protocol, "if I were wrong I would know" | **B** |
 | Rhetorical effectiveness | witty, lands the logic | lands the logic + protocol-correct | tie |
 | Word count | ~250 | ~330 | **A** (tighter) |
 | Concrete texture | "pigeons agreeing bread is good", Galileo | radiator/perspiration/parallax spot proof | **B** |
 | Overall authenticity | a clever sitcom paraphrase | Sheldon | **B** |
+
+**Voice-fidelity gain: +300%** (3/12 → 12/12, naked → ghost).
 
 **Bottom line:** naked is funny and gets the *logic* right (argumentum ad populum, the spot is sacred), but it **uses contractions constantly** — `you've`, `doesn't`, `it's`, `that's` — and "no contractions" is Sheldon's single most defining mechanical rule. That one break unravels the persona. The ghost holds zero contractions, adds `For the record`, the offer of tea, `emotive bias`, the qualifier `in my way`, and `Checkmate.` **Delta large.**
 

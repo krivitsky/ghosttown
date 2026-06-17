@@ -4,13 +4,17 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | ~6 / 14 | ~14 / 14 | **B** |
+| **Summary** | | | |
+| **Voice-tic hit rate** | **~6 / 14** | **~14 / 14** | **B +133%** |
+| **Details** | | | |
 | Never-violate compliance | broke 1 (no `— Deming` sign-off); margin-of-uncertainty only implied | clean | **B** |
 | Stance recall | ranking destructive, build quality in, 94% system | + stratified ratio-estimate 5×, standard error, "what is new is the application" | **B** |
 | Rhetorical effectiveness | strong, "one mistake wearing two coats" | strong + numbered prescription | **B** |
 | Word count | ~360 | ~430 | **A** (tighter) |
 | Concrete texture | "one mistake wearing two coats" | "sample 5× as large for the same effort", standard error | **B** |
 | Overall authenticity | a faithful student of Deming | Deming | **B** |
+
+**Voice-fidelity gain: +133%** (6/14 → 14/14, naked → ghost).
 
 **Bottom line:** naked gets the *doctrine* right (judgment sample proves nothing, drive out fear, 94% is the system) and even coins a nice line — but drops the `— Deming` sign-off and never reaches the **statistical specifics** that make Deming Deming: stratified ratio-estimate efficiency, "report the standard error," "what is new here is the application." The ghost supplies the documented numbers and the grim closer. **Delta medium-large.**
 

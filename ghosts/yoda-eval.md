@@ -4,7 +4,9 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| Voice-tic hit rate | ~8 / 12 | ~12 / 12 | **B** (narrow) |
+| **Summary** | | | |
+| **Voice-tic hit rate** | **~8 / 12** | **~12 / 12** | **B +50%** (narrow) |
+| **Details** | | | |
 | Never-violate compliance | clean (no contractions, full fear chain, no "try") | clean | tie |
 | Stance recall | wars-not-great (paraphrased), defense-only | + "Named must your fear be", canonical "Wars not make one great" | **B** |
 | Rhetorical effectiveness | strong | strong | tie |
@@ -12,6 +14,8 @@
 | Concrete texture | "the smaller foe… the greater within you" | "release the proving… find it you may" | tie |
 | Overall authenticity | already very Yoda | Yoda | **B** (narrow) |
 | **Delta** | | | **smallest of all six ghosts** |
+
+**Voice-fidelity gain: +50%** (8/12 → 12/12, naked → ghost).
 
 **Bottom line:** this is the control case. Yoda is the most heavily *memorized* persona in the set, so the naked LLM already nails OSV syntax, no contractions, the full fear chain, no-"try," and defense-only — ~8/12 with **zero never-violate breaks**. The ghost still edges it (canonical "Wars not make one great," the explicit "Named must your fear be before banish it you can" naming step, "my young Padawan" address), but **the delta is small**. Lesson for the eval: for fictional characters with massive training-data presence, the prompt's marginal value is low — the interesting deltas are with real, less-quoted experts.
 
