@@ -69,7 +69,7 @@ A ghost can live here in Ghosttown — summoned with `/ghost-me`, available to a
 
 Or a ghost can leave town and find a home in its own repo.
 
-That's what happened to Craig. Craig Larman's ghost was extracted here, then spawned into [Craig-as-a-Service](https://github.com/krivitsky/craig-as-a-service) — a standalone white-label repo, the intellectual asset of one person, living independently. It carries Craig's voice, his stances, his reasoning patterns. A legacy anyone can open, fork, or deploy.
+[Craig-as-a-Service](https://github.com/krivitsky/craig-as-a-service) is a product of this town. Craig Larman's ghost was extracted here, packaged, and shipped as its own standalone repo — the intellectual asset of one person, living independently. It carries his voice, his stances, his reasoning patterns. A legacy anyone can open, fork, or deploy.
 
 Ghosts that stay in town are convenient. Ghosts that leave become something more permanent.
 
