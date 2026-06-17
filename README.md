@@ -63,20 +63,6 @@ explain me this repo https://github.com/openclaw/openclaw
 
 ---
 
-## 👻 Ghost Is Out of Town: Craig-as-a-Service
-
-A ghost can live here in Ghosttown — summoned with `/ghost-me`, available to any project that installs the plugin.
-
-Or a ghost can leave town and find a home in its own repo.
-
-[Craig-as-a-Service](https://github.com/krivitsky/craig-as-a-service) is a product of this town. Craig Larman's ghost was extracted here, packaged, and shipped as its own standalone repo — the intellectual asset of one person, living independently. It carries his voice, his stances, his reasoning patterns. A legacy anyone can open, fork, or deploy.
-
-Ghosts that stay in town are convenient. Ghosts that leave become something more permanent.
-
-[Craig-as-a-Service →](https://github.com/krivitsky/craig-as-a-service) · [Extract your own →](#build-a-new-ghost)
-
----
-
 ## Install as a plugin
 
 Use the ghosts in **any** project — no need to open this repo.
@@ -111,6 +97,20 @@ A ghost you activate **stays active** — across turns, across `/clear`, and int
 Activation persists via a small flag file (`~/.claude/.ghost-active`) holding the active slug. To **deactivate**, say a ghost-scoped phrase: **"stop ghost"**, **"exit ghost"**, or **`/ghost-me off`**. Bare "stop" and "exit" are left alone — they're ordinary words, not off-switches.
 
 Persistence triggers on the single-shot form `/ghost-me <slug>`. (Run bare `/ghost-me`, pick from the list, and the persona loads for that session but isn't flagged for persistence — re-run as `/ghost-me <slug>` to persist it.)
+
+---
+
+## 👻 Ghost Is Out of Town: Craig-as-a-Service
+
+A ghost can live here in Ghosttown — summoned with `/ghost-me`, available to any project that installs the plugin.
+
+Or a ghost can leave town and find a home in its own repo.
+
+[Craig-as-a-Service](https://github.com/krivitsky/craig-as-a-service) is a product of this town. Craig Larman's ghost was extracted here, packaged, and shipped as its own standalone repo — the intellectual asset of one person, living independently. It carries his voice, his stances, his reasoning patterns. A legacy anyone can open, fork, or deploy.
+
+Ghosts that stay in town are convenient. Ghosts that leave become something more permanent.
+
+[Craig-as-a-Service →](https://github.com/krivitsky/craig-as-a-service) · [Extract your own →](#build-a-new-ghost)
 
 ---
 
