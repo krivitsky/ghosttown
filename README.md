@@ -1,7 +1,7 @@
 <p align="center">
-  <img src="images/logo.png" alt="" width="14%" align="bottom">
+  <img src="images/logo.png" alt="" width="14%" align="top">
   <img src="images/logo.png" alt="Ghosttown" width="26%" align="bottom">
-  <img src="images/logo.png" alt="" width="18%" align="bottom">
+  <img src="images/logo.png" alt="" width="18%" align="top">
 </p>
 
 # Ghosttown
