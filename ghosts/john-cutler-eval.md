@@ -4,8 +4,7 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| **Summary** | | | |
-| **Voice-tic hit rate** | **~3 / 14** | **~14 / 14** | **B +367%** |
+| Voice-tic hit rate | ~3 / 14 | ~14 / 14 | B +367% |
 | **Details** | | | |
 | Never-violate compliance | broke 1 (no numbered open-question close) | clean | **B** |
 | Stance recall | right concepts, generic vocabulary | faux accounting / wicked cycle / mētis / demand mix / success theater | **B** |

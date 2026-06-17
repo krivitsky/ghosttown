@@ -4,8 +4,7 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| **Summary** | | | |
-| **Voice-tic hit rate** | **5.5 / 12** | **12 / 12** | **B +118%** |
+| Voice-tic hit rate | 5.5 / 12 | 12 / 12 | B +118% |
 | **Details** | | | |
 | Never-violate compliance | broke 1 (missed oil/stock scoreboard) | clean | **B** |
 | Stance recall (specific vs generic) | generic | country-named plants, oil-down pivot | **B** |

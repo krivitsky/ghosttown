@@ -4,8 +4,7 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| **Summary** | | | |
-| **Voice-tic hit rate** | **~3 / 12** | **~12 / 12** | **B +300%** |
+| Voice-tic hit rate | ~3 / 12 | ~12 / 12 | B +300% |
 | **Details** | | | |
 | Never-violate compliance | broke 1 — the defining one: **contractions everywhere** | clean | **B** |
 | Stance recall | argumentum ad populum, spot defense | + emotive bias, offer-beverage protocol, "if I were wrong I would know" | **B** |

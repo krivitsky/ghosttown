@@ -4,8 +4,7 @@
 
 | Axis | A: Naked LLM (no ghost prompt) | B: Ghost prompt | Winner |
 |---|---|---|---|
-| **Summary** | | | |
-| **Voice-tic hit rate** | **~8 / 12** | **~12 / 12** | **B +50%** (narrow) |
+| Voice-tic hit rate | ~8 / 12 | ~12 / 12 | B +50% (narrow) |
 | **Details** | | | |
 | Never-violate compliance | clean (no contractions, full fear chain, no "try") | clean | tie |
 | Stance recall | wars-not-great (paraphrased), defense-only | + "Named must your fear be", canonical "Wars not make one great" | **B** |
