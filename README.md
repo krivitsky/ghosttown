@@ -65,15 +65,15 @@ explain me this repo https://github.com/openclaw/openclaw
 
 ## 👻 Ghost Is Out of Town: Craig-as-a-Service
 
-Before Ghosttown had a name, [Craig-as-a-Service](https://github.com/krivitsky/craig-as-a-service) was built by hand — the same four-layer model applied to one person.
+A ghost can live here in Ghosttown — summoned with `/ghost-me`, available to any project that installs the plugin.
 
-226 of Craig Larman's emails, run through the extraction pipeline and packaged as a standalone Claude Code skill. Corpus → extraction → deployable persona. It was the first proof the model works. Ghosttown is what happens when you turn that into a repeatable process.
+Or a ghost can leave town and find a home in its own repo.
 
-Craig-as-a-Service is the hand-built specimen. Ghosttown is the factory.
+That's what happened to Craig. Craig Larman's ghost was extracted here, then spawned into [Craig-as-a-Service](https://github.com/krivitsky/craig-as-a-service) — a standalone white-label repo, the intellectual asset of one person, living independently. It carries Craig's voice, his stances, his reasoning patterns. A legacy anyone can open, fork, or deploy.
 
-This is what individual IA extraction looks like when it ships as its own product — not just a ghost inside a shared library, but a standalone repo anyone can fork, extend, or replace with a different expert's corpus.
+Ghosts that stay in town are convenient. Ghosts that leave become something more permanent.
 
-[See Craig-as-a-Service →](https://github.com/krivitsky/craig-as-a-service) · [Build your own →](#build-a-new-ghost)
+[Craig-as-a-Service →](https://github.com/krivitsky/craig-as-a-service) · [Extract your own →](#build-a-new-ghost)
 
 ---
 
