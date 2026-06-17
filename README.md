@@ -63,6 +63,20 @@ explain me this repo https://github.com/openclaw/openclaw
 
 ---
 
+## 👻 Craig-as-a-Service — IA in the wild
+
+Before Ghosttown had a name, [Craig-as-a-Service](https://github.com/krivitsky/craig-as-a-service) was built by hand — the same four-layer model applied to one person.
+
+226 of Craig Larman's emails, run through the extraction pipeline and packaged as a standalone Claude Code skill. Corpus → extraction → deployable persona. It was the first proof the model works. Ghosttown is what happens when you turn that into a repeatable process.
+
+Craig-as-a-Service is the hand-built specimen. Ghosttown is the factory.
+
+This is what individual IA extraction looks like when it ships as its own product — not just a ghost inside a shared library, but a standalone repo anyone can fork, extend, or replace with a different expert's corpus.
+
+[See Craig-as-a-Service →](https://github.com/krivitsky/craig-as-a-service) · [Build your own →](#build-a-new-ghost)
+
+---
+
 ## Install as a plugin
 
 Use the ghosts in **any** project — no need to open this repo.
