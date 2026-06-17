@@ -1,8 +1,16 @@
 # Sheldon Cooper — Eval Sample
 
-**Prompt:** Review PR #36795 — [Flight] Resolve models before JSON.stringify (facebook/react)
+## Density Analysis
+
+**0.8x vs default Claude** · ~520 words
+
+Below 1x — the only ghost *less* dense than default Claude. The no-contractions rule, full-sentence formality, and compulsive enumeration ("First… Second… Third…") inflate the word count. Faithful to the persona, but the persona is verbose by design. For Sheldon, fidelity is the metric; density is not.
 
 ---
+
+**Sample Prompt:** the standard density eval — review PR #36795, [Flight] Resolve models before JSON.stringify (facebook/react). Full text: [eval-prompt.md](../eval-prompt.md).
+
+**Sample Response:**
 
 For the record, this implementation is correct, and the performance rationale is sound. However, several aspects warrant enumeration before I render my final verdict.
 

@@ -48,14 +48,16 @@ explain me this repo https://github.com/openclaw/openclaw
 
 ## Available ghosts
 
-| Ghost | Domain | Command | Output Token Density |
-|---|---|---|---|
-| [John Cutler](ghosts/john-cutler.md) | Product management, org design, AI adoption | `/ghost-me john-cutler` | [1.2x](ghosts/john-cutler-sample.md) |
-| [Craig Larman](ghosts/craig-larman.md) | Systems thinking in org design, GenAI and LLM Assisted Development (GLAD) | `/ghost-me craig-larman` | [**3x**](ghosts/craig-larman-sample.md) |
-| [Donald Trump](ghosts/donald-trump.md) | Deal-making, loyalty, US politics, tariffs | `/ghost-me trump` | [1.1x](ghosts/donald-trump-sample.md) |
-| [W. Edwards Deming](ghosts/w-edwards-deming.md) | Quality, systems, variation | `/ghost-me deming` | [—](ghosts/w-edwards-deming-sample.md) |
-| [Yoda](ghosts/yoda.md) | Wisdom, commitment, fear, the Force | `/ghost-me yoda` | [1.4x](ghosts/yoda-sample.md) |
-| [Sheldon Cooper](ghosts/sheldon-cooper.md) | Theoretical physics, social protocols, intellectual superiority | `/ghost-me sheldon-cooper` | [0.8x](ghosts/sheldon-cooper-sample.md) |
+| Ghost | Domain | Command | Eval | Density |
+|---|---|---|---|---|
+| [John Cutler](ghosts/john-cutler.md) | Product management, org design, AI adoption | `/ghost-me john-cutler` | [+367%](ghosts/john-cutler-eval.md) | [1.2x](ghosts/john-cutler-sample.md) |
+| [Craig Larman](ghosts/craig-larman.md) | Systems thinking in org design, GenAI and LLM Assisted Development (GLAD) | `/ghost-me craig-larman` | [+275%](ghosts/craig-larman-eval.md) | [**3x**](ghosts/craig-larman-sample.md) |
+| [Donald Trump](ghosts/donald-trump.md) | Deal-making, loyalty, US politics, tariffs | `/ghost-me trump` | [+118%](ghosts/donald-trump-eval.md) | [1.1x](ghosts/donald-trump-sample.md) |
+| [W. Edwards Deming](ghosts/w-edwards-deming.md) | Quality, systems, variation | `/ghost-me deming` | [+133%](ghosts/w-edwards-deming-eval.md) | [—](ghosts/w-edwards-deming-sample.md) |
+| [Yoda](ghosts/yoda.md) | Wisdom, commitment, fear, the Force | `/ghost-me yoda` | [+50%](ghosts/yoda-eval.md) | [1.4x](ghosts/yoda-sample.md) |
+| [Sheldon Cooper](ghosts/sheldon-cooper.md) | Theoretical physics, social protocols, intellectual superiority | `/ghost-me sheldon-cooper` | [+300%](ghosts/sheldon-cooper-eval.md) | [0.8x](ghosts/sheldon-cooper-sample.md) |
+
+> **Eval** = voice-fidelity gain of the ghost prompt over a plain LLM told to impersonate. **Density** = output token-density vs. default Claude. Click either for detail.
 
 ---
 
@@ -145,8 +147,9 @@ Copy it. Add your own Ghosts. The question worth testing: does the expert's IA s
 | File | Contents |
 |---|---|
 | `ghosts/[slug].md` | The ghost — system prompt with voice rules, stances, heuristics, and a verification log |
-| `ghosts/[slug]-sample.md` | The ghost's eval response (token-density benchmark) |
-| README row | Added to the table above, with the density ratio linked to the sample |
+| `ghosts/[slug]-eval.md` | Naked-vs-ghost eval: summary table, both responses, voice-feature scorecard, fidelity delta |
+| `ghosts/[slug]-sample.md` | The ghost's eval response, verbatim |
+| README row | Added to the table above, with the ghost edge (naked → ghost) linked to the eval |
 
 ---
 

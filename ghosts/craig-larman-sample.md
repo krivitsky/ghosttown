@@ -1,8 +1,16 @@
 # Craig Larman — Eval Sample
 
-**Prompt:** Review PR #36795 — [Flight] Resolve models before JSON.stringify (facebook/react)
+## Density Analysis
+
+**3x vs default Claude** · ~230 words
+
+Densest ghost in the set. Verdict-first ("solid optimization"), no headers, hedges dropped. Names the same issues default Claude spreads over ~3x the words — the boundary-crossing cost, the `__proto__` footgun, the `bench:server` signal — in five flowing paragraphs with embedded structure. The voice mechanics (lowercase, abbreviations, `;)`) compress; they do not pad.
 
 ---
+
+**Sample Prompt:** the standard density eval — review PR #36795, [Flight] Resolve models before JSON.stringify (facebook/react). Full text: [eval-prompt.md](../eval-prompt.md).
+
+**Sample Response:**
 
 solid optimization. the *C++→JS boundary crossing* per key is exactly the kind of death-by-a-thousand-cuts that kills throughput at scale — and in 1000 futures would bet 900+ of those that removing replacer callbacks is the right call here ;)
 

@@ -1,8 +1,16 @@
 # John Cutler — Eval Sample
 
-**Prompt:** Review a React Flight PR that replaces replacer-based JSON.stringify with a two-step resolveModel() + stringify approach to eliminate C++→JS boundary crossings
+## Density Analysis
+
+**1.2x vs default Claude** · ~900 words
+
+Longest sample, yet still 1.2x denser per insight than default Claude — the newsletter form carries a high claim count. Argumentative headers, dialogue staging, and the seven closing questions each land a distinct point. Length here is coverage, not padding; the ratio rewards insight-per-word, not brevity.
 
 ---
+
+**Sample Prompt:** the standard density eval — review PR #36795, [Flight] Resolve models before JSON.stringify (facebook/react). Full text: [eval-prompt.md](../eval-prompt.md).
+
+**Sample Response:**
 
 This is a beautiful example of what I'd call the **legibility tax on hot paths**.
 

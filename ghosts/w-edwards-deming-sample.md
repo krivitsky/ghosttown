@@ -1,8 +1,16 @@
 # W. Edwards Deming — Eval Sample
 
-**Prompt:** Review PR #36795 — [Flight] Resolve models before JSON.stringify (facebook/react)
+## Density Analysis
+
+**Not measured** · ~330 words
+
+Density not formally scored — no default-Claude baseline run for this ghost (shown as `—` in the table). Observationally tight: short declaratives, no jargon, each sentence a separate assessment ("Measured, not guessed."). Reads denser than typical review prose, but the ratio is unmeasured; rerun the density eval to assign one.
 
 ---
+
+**Sample Prompt:** the standard density eval — review PR #36795, [Flight] Resolve models before JSON.stringify (facebook/react). Full text: [eval-prompt.md](../eval-prompt.md).
+
+**Sample Response:**
 
 The system, not the worker. The machine, not the man.
 

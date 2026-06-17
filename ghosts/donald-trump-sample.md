@@ -1,8 +1,16 @@
 # Donald Trump — Eval Sample
 
-**Prompt:** Review PR #36795 — [Flight] Resolve models before JSON.stringify (facebook/react)
+## Density Analysis
+
+**1.1x vs default Claude** · ~290 words
+
+Barely above par. Short, but repetition *is* the voice ("many, many", "very, very", "Tremendous. Tremendous.") so words-per-insight stays near default. High fidelity, low information gain — Trump persuades by emphasis, not by packing claims. Density is not where this ghost wins; voice is.
 
 ---
+
+**Sample Prompt:** the standard density eval — review PR #36795, [Flight] Resolve models before JSON.stringify (facebook/react). Full text: [eval-prompt.md](../eval-prompt.md).
+
+**Sample Response:**
 
 Look, this is a TREMENDOUS pull request. Tremendous. I've seen many, many pull requests in my time -- actually, I've reviewed more code than almost anybody, people tell me this -- and this one, this is fantastic.
 

@@ -53,41 +53,72 @@ Write the completed file to `ghosts/[expert-slug].md`.
 
 Name format: `firstname-lastname.md` (e.g. `w-edwards-deming.md`).
 
-### 5. Run token density eval
+### 5. Run the naked-vs-ghost eval
 
-Run two subagents in parallel using the standard prompt in `eval-prompt.md`:
+**Why this baseline.** Famous people are already partly baked into the base model. Comparing the ghost to *default Claude with no persona* measures the wrong thing — default Claude is not trying. The real question is: **what does our ghost prompt add over the LLM's own impression of this person?** So the baseline is a naked LLM *actively impersonating* the persona.
 
-- **Agent A:** Default Claude, no persona. Answer the prompt naturally.
-- **Agent B:** Ghost. Answer using the ghost file as system prompt.
+**Pick one in-domain probe prompt.** A single question in the persona's domain, **chosen to target 2–4 of their `Never violate these` rules** — that is exactly where a naked impression cracks (it gets the surface voice but smooths away mechanical tics and misses documented stances). Not in the corpus verbatim. One probe per ghost.
 
-After both respond:
-- Compute density ratio (ghost ÷ default Claude, by words-per-insight)
-- Check voice fidelity: did the ghost stay in character on unfamiliar territory?
-- Write Agent B's response verbatim to `ghosts/[expert-slug]-sample.md` with this header:
+**Run two subagents in parallel:**
+- **Agent A — naked:** "You are [Name]. Respond in first person, in character." No ghost file. Answer the probe.
+- **Agent B — ghost:** read `ghosts/[slug].md`, adopt it fully, answer the same probe.
+
+**Then the main agent scores both** on these axes (fill the summary table at the top of the eval file):
+
+| Axis | What it measures |
+|---|---|
+| Voice-tic hit rate | % of the ghost's `Write like this` rules present (count them) |
+| Never-violate compliance | how many hard rules each response honored (binary per rule) |
+| Stance recall | did it surface the *specific* documented positions, or generic ones? |
+| Rhetorical effectiveness | did it actually answer / win the exchange? |
+| Word count | denser is usually better |
+| Concrete texture | specific hooks, numbers, names — naked sometimes wins here |
+| Overall authenticity | believable-generic vs. consistent-under-pressure |
+
+**Headline metric = fidelity delta (B − A).** A ghost earns its keep only if it beats the naked impression. Note: delta is **largest for voices with a mechanical signature** the base model erases (Larman's lowercase-`i` + `c` sign-off, Sheldon's no-contractions, Deming's `— Deming` + sampling specifics) and **smallest for heavily-memorized fictional characters** (Yoda) where the base model already owns the voice.
+
+Write `ghosts/[slug]-eval.md` — summary table at the very top (axes above, winner per axis, one bottom-line sentence), then: the probe, both responses verbatim, the voice-feature scorecard, and the assessment. See `ghosts/donald-trump-eval.md` as the reference format.
+
+#### 5b. Density eval (secondary metric)
+
+Separately, measure how token-dense the ghost is. Run two subagents on the **standard PR-review prompt in `eval-prompt.md`** (same stimulus for every ghost = comparable across the table):
+- **Agent A:** default Claude, no persona.
+- **Agent B:** the ghost (`ghosts/[slug].md` as system prompt).
+
+Compute the density ratio = default's words-per-insight ÷ ghost's words-per-insight (>1x = ghost is denser). Then write **Agent B's response** to `ghosts/[slug]-sample.md` with a **Density Analysis** block on top:
 
 ```
 # [Full Name] — Eval Sample
 
-**Prompt:** [one-line description of the eval prompt]
+## Density Analysis
+
+**[ratio]x vs default Claude** · ~[N] words
+
+[2–3 lines: is it above or below 1x, and *why* — which voice mechanics compress (Larman's lowercase/abbreviations, Yoda's OSV) or inflate (Sheldon's no-contractions + enumeration, Trump's repetition). For verbose personas note that density is the wrong metric and fidelity is the point. If no baseline was run, write "Not measured" and say so.]
 
 ---
+
+**Sample Prompt:** [one-line description] — full text: [eval-prompt.md](../eval-prompt.md).
+
+**Sample Response:**
 
 [ghost response verbatim]
 ```
 
-A well-built ghost should be 2–4x more token-dense than default Claude on the same content.
+(The `Sample Prompt` line is a one-line summary only — the verbatim stimulus lives in `eval-prompt.md`; always link it.)
 
 ### 6. Register in README
 
-Add the ghost to the **Available ghosts** table in `README.md`:
+Add the ghost to the **Available ghosts** table in `README.md` — two metric columns, **Eval** and **Density**:
 
 ```
-| [Full Name] | [2–4 word domain summary] | `/ghost-me [slug]` | [[density ratio](ghosts/[slug]-sample.md)] |
+| [Full Name] | [2–4 word domain summary] | `/ghost-me [slug]` | [+NNN%](ghosts/[slug]-eval.md) | [X.Yx](ghosts/[slug]-sample.md) |
 ```
 
 - Domain: pick the 2–4 words that best describe their expertise, not their biography
-- Density: the ratio only — no parenthetical notes. Link it to the sample file.
-- If eval was skipped, write `—` (no link)
+- **Eval:** voice-fidelity gain of the ghost over the naked impression, as a single relative % — `(ghost_hits ÷ naked_hits − 1) × 100`, e.g. `3/14 → 14/14` becomes `+367%`. Link to `-eval.md`.
+- **Density:** the density ratio from 5b, e.g. `1.4x`. Link to `-sample.md`.
+- If either eval was skipped, write `—` (no link) in that column.
 
 ### 7. Bump plugin version
 
@@ -99,7 +130,7 @@ Tell the user:
 - Ghost file location
 - How many heuristics, principles, biases, voice features extracted
 - Which items are `pending` HITL review
-- Token density ratio from the eval
+- The fidelity delta from the eval (naked vs ghost voice-tic hit rate) and which never-violate rules the naked baseline broke
 - How to deploy: inject the ghost file as system prompt
 
 ---

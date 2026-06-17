@@ -1,8 +1,16 @@
 # Yoda — Eval Sample
 
-**Prompt:** Review PR #36795 — [Flight] Resolve models before JSON.stringify (facebook/react)
+## Density Analysis
+
+**1.4x vs default Claude** · ~210 words
+
+Compact. OSV fragments and `Hmm.` pauses force one idea per short line, so words-per-insight runs low. 1.4x denser than default Claude despite — or because of — the archaic syntax: the inversion strips filler. Brevity is native to the voice.
 
 ---
+
+**Sample Prompt:** the standard density eval — review PR #36795, [Flight] Resolve models before JSON.stringify (facebook/react). Full text: [eval-prompt.md](../eval-prompt.md).
+
+**Sample Response:**
 
 Hmm.
 
