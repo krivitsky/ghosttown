@@ -63,7 +63,7 @@ explain me this repo https://github.com/openclaw/openclaw
 
 ---
 
-## 👻 Craig-as-a-Service — IA in the wild
+## 👻 Ghost Is Out of Town: Craig as a Service
 
 Before Ghosttown had a name, [Craig-as-a-Service](https://github.com/krivitsky/craig-as-a-service) was built by hand — the same four-layer model applied to one person.
 
