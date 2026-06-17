@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/ghost-icon.png" alt="Ghosttown" width="200">
+</p>
+
 # Ghosttown
 
 Talk to experts. Ask them anything — in their own voice, with their actual stances.
